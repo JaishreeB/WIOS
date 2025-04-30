@@ -11,11 +11,16 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "WarehouseZone_info")
+@Table(name = "zone_info")
 public class Zone {
 	@Id
 	int zoneId;
 	String zoneName;
 	int zoneCapacity;
+	int availableSpace;
+
+	public int getOccupiedSpace() {
+		return zoneCapacity - availableSpace;
+	}
 
 }

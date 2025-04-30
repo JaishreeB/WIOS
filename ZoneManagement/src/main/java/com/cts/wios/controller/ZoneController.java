@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,12 +22,12 @@ public class ZoneController {
 	ZoneService service;
 
 	@PostMapping("/save")
-	public String createZone(Zone zone) {
+	public String createZone(@RequestBody Zone zone) {
 		return service.createZone(zone);
 	}
 
 	@PutMapping("/update")
-	public Zone updateZone(Zone zone) {
+	public Zone updateZone(@RequestBody Zone zone) {
 		return service.updateZone(zone);
 	}
 
@@ -35,7 +36,7 @@ public class ZoneController {
 		return service.viewZone(warehouseZoneId);
 	}
 
-	@DeleteMapping("/delete")
+	@DeleteMapping("/delete/{id}")
 	public String deleteZone(@PathVariable("id") int warehouseZoneId) {
 		return service.deleteZone(warehouseZoneId);
 
