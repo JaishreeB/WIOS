@@ -25,7 +25,7 @@ class StockManagementApplicationTests {
 	StockServiceImpl service;
 
 	@Test
-	void createstockTest() {
+	void createStockTest() {
 		Stock stock = new Stock(10,"chocolate","sweet",50,1);
 		Mockito.when(repository.save(stock)).thenReturn(stock);
 		String response = service.createStock(stock);
@@ -33,7 +33,7 @@ class StockManagementApplicationTests {
 	}
 
 	@Test
-	void updatestockTest() {
+	void updateStockTest() {
 		Stock stock = new Stock(10,"chocolate","sweet",50,1);
 		Mockito.when(repository.save(stock)).thenReturn(stock);
 		Stock response = service.updateStock(stock);
@@ -41,7 +41,7 @@ class StockManagementApplicationTests {
 	}
 
 	@Test
-	void getstockTest() {
+	void getStockTest() {
 		int stockId = 10;
 		Stock stock = new Stock(10,"chocolate","sweet",50,1);
 		Mockito.when(repository.findById(stockId)).thenReturn(Optional.of(stock));

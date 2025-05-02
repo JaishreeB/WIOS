@@ -14,9 +14,9 @@ import lombok.NoArgsConstructor;
 @Table(name = "stock_info")
 public class Stock {
 	@Id
-	int stockId;
-	String stockName;
-	String stockCategory;
-	int stockQuantity;
-	int zoneId;
+	private int stockId;
+	private String stockName;
+	private String stockCategory;
+	private int stockQuantity;
+	private int zoneId;
 }

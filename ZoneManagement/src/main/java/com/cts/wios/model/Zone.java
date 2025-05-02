@@ -14,10 +14,10 @@ import lombok.NoArgsConstructor;
 @Table(name = "zone_info")
 public class Zone {
 	@Id
-	int zoneId;
-	String zoneName;
-	int zoneCapacity;
-	int availableSpace;
+	private int zoneId;
+	private String zoneName;
+	private int zoneCapacity;
+	private int availableSpace;
 
 	public int getOccupiedSpace() {
 		return zoneCapacity - availableSpace;

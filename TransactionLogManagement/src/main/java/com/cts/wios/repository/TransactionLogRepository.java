@@ -1,0 +1,31 @@
+package com.cts.wios.repository;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.cts.wios.model.TransactionLog;
+
+@Repository
+public interface TransactionLogRepository extends JpaRepository<TransactionLog, Integer> {
+
+//	List<TransactionLog> findByStockCategoryIs(String category);
+
+//	List<TransactionLog> findByZoneIdIs(int zoneId);
+
+
+	List<TransactionLog> findByTypeIs(String type);
+
+	List<TransactionLog> findByPriceBetween(Double initialPrice, Double finalPrice);
+
+	List<TransactionLog> findByTimestampBetween(LocalDate startDate, LocalDate endDate);
+
+	List<TransactionLog> findByStockIdIs(int stockId);
+
+	List<TransactionLog> findByVendorIdIs(int vendorId);
+
+}
