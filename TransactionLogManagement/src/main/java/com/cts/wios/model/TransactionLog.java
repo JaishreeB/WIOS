@@ -21,6 +21,7 @@ public class TransactionLog {
 	private int transactionId;
 	private int stockId;
 	private int vendorId;
+	private int userId;
 //	private int zoneId;
 	private int quantity;
 	private String type;
@@ -28,10 +29,12 @@ public class TransactionLog {
 	private LocalDateTime timestamp;
 	private double price;
 
-	public TransactionLog(int transactionId, int stockId, int vendorId, int quantity, String type, double price) {
+	public TransactionLog(int userId, int transactionId, int stockId, int vendorId, int quantity, String type,
+			double price) {
 		super();
 		this.transactionId = transactionId;
 		this.stockId = stockId;
+		this.userId = userId;
 		this.vendorId = vendorId;
 		this.quantity = quantity;
 		this.type = type;
