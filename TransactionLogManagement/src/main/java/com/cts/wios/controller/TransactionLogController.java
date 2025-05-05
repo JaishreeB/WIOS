@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -59,11 +60,11 @@ public class TransactionLogController {
 
 	}
 
+	
 	@GetMapping("/fetchByTimestamp/{start}/{end}")
-	public List<TransactionLog> getTransactionLogsByTimestampBetween(@PathVariable("start") LocalDate startDate,
-			@PathVariable("end") LocalDate endDate) {
+	public List<TransactionLog> getTransactionLogsByTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  LocalDate startDate,
+			@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  @PathVariable("end") LocalDate endDate) {
 		return service.getTransactionLogsByTimestampBetween(startDate, endDate);
-
 	}
 
 	@GetMapping("/fetchByPrice/{initial}/{final}")
