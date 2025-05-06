@@ -1,4 +1,6 @@
-package com.cts.wios.model;
+package com.cts.wios.dto;
+
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -11,13 +13,11 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "stock_info")
-public class Stock {
+@Table(name = "zone_info")
+public class Zone {
 	@Id
-	private int stockId;
-	private String stockName;
-	private String stockCategory;
-	private int stockQuantity;
 	private int zoneId;
-	private int vendorId;
+	private String zoneName;
+	private int zoneCapacity;
+	private int availableSpace;
 }

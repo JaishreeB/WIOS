@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cts.wios.dto.StockVendorResponseDTO;
+import com.cts.wios.dto.StockZoneResponseDTO;
 import com.cts.wios.model.Stock;
 import com.cts.wios.service.StockService;
 
@@ -54,9 +56,13 @@ public class StockController {
 	}
 
 	@GetMapping("/fetchZone/{zone}")
-	public List<Stock> getStocksByZone(@PathVariable("zone") int zoneId) {
+	public StockZoneResponseDTO getStocksByZone(@PathVariable("zone") int zoneId) {
 		return service.getStocksByZone(zoneId);
-
+	}
+	
+	@GetMapping("/fetchVendor/{vendor}")
+	public StockVendorResponseDTO getStocksByVendor(@PathVariable("vendor") int vendorId) {
+		return service.getStocksByVendor(vendorId);
 	}
 
 }

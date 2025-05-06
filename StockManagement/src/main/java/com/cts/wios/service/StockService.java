@@ -2,6 +2,8 @@ package com.cts.wios.service;
 
 import java.util.List;
 
+import com.cts.wios.dto.StockVendorResponseDTO;
+import com.cts.wios.dto.StockZoneResponseDTO;
 import com.cts.wios.model.Stock;
 
 public interface StockService {
@@ -17,5 +19,7 @@ public interface StockService {
 
 	public List<Stock> getStocksByCategory(String category);
 
-	public List<Stock> getStocksByZone(int zoneId);
+	public StockZoneResponseDTO getStocksByZone(int zoneId);
+
+	public StockVendorResponseDTO getStocksByVendor(int vendorId);
 }
