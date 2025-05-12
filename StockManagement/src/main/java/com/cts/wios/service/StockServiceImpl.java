@@ -10,6 +10,8 @@ import com.cts.wios.dto.StockVendorResponseDTO;
 import com.cts.wios.dto.StockZoneResponseDTO;
 import com.cts.wios.dto.Vendor;
 import com.cts.wios.dto.Zone;
+import com.cts.wios.exceptions.SpaceNotAvailable;
+import com.cts.wios.exceptions.StockNotFound;
 import com.cts.wios.feignclient.VendorClient;
 import com.cts.wios.feignclient.ZoneClient;
 import com.cts.wios.model.Stock;
@@ -25,31 +27,67 @@ public class StockServiceImpl implements StockService {
 	
 	@Autowired
 	VendorClient vendorClient;
+	
+	int UpdateCapacity;
+	
 	@Override
-	public String createStock(Stock stock) {
+	public String createStock(Stock stock) throws SpaceNotAvailable {
 		repository.save(stock);
+		int zoneId = stock.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		UpdateCapacity = zone.getAvailableSpace() - stock.getStockQuantity();
+		if(zone.getZoneCapacity()>UpdateCapacity) {	
+		zone.setAvailableSpace(UpdateCapacity);
+		zoneClient.updateZone(zone);
+		}
+		else {
+			throw new SpaceNotAvailable("Space not available to store the stock!!!!");
+		}
 		return "Stock saved successfully";
 	}
 
 	@Override
-	public Stock updateStock(Stock stock) {
+	public Stock updateStockForInbound(Stock stock) {
+		int zoneId = stock.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		UpdateCapacity = zone.getAvailableSpace() - stock.getStockQuantity();
+		zone.setAvailableSpace(UpdateCapacity);
+		zoneClient.updateZone(zone);
+		return repository.save(stock);
+	}
+	
+	@Override
+	public Stock updateStockForOutbound(Stock stock) {
+		int zoneId = stock.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		UpdateCapacity = zone.getAvailableSpace() + stock.getStockQuantity();
+		zone.setAvailableSpace(UpdateCapacity);
+		zoneClient.updateZone(zone);
 		return repository.save(stock);
 	}
 
 	@Override
-	public Stock viewStock(int stockId) {
+	public Stock viewStock(int stockId) throws StockNotFound{
 		Optional<Stock> optional = repository.findById(stockId);
-//		if (optional.isPresent())
-//			return optional.get();
-//		else
-//			throw new ZoneNotFound("Invalid Id");
-		return optional.get();
+		if (optional.isPresent())
+			return optional.get();
+		else
+			throw new StockNotFound("Invalid Id");
 	}
 
 	@Override
-	public String deleteStock(int stock) {
+	public String deleteStock(int stock) throws StockNotFound {
+		Stock stockItem=repository.findById(stock).get();
+		if(stockItem==null) {
+			throw new StockNotFound("Stock Item not found");
+		}
+		int zoneId = stockItem.getZoneId();
+		Zone zone = zoneClient.viewZone(zoneId);
+		UpdateCapacity = zone.getAvailableSpace() - stockItem.getStockQuantity();
+		zone.setAvailableSpace(UpdateCapacity);
+		zoneClient.updateZone(zone);
 		repository.deleteById(stock);
-		return "Stock deleted";
+		return "StockItem Deleted and updated the zone capacity!!!";
 	}
 
 	@Override

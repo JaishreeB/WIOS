@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.wios.dto.StockVendorResponseDTO;
 import com.cts.wios.dto.StockZoneResponseDTO;
+import com.cts.wios.exceptions.SpaceNotAvailable;
+import com.cts.wios.exceptions.StockNotFound;
 import com.cts.wios.model.Stock;
 import com.cts.wios.service.StockService;
 
@@ -24,22 +26,27 @@ public class StockController {
 	StockService service;
 
 	@PostMapping("/save")
-	public String createStock(@RequestBody Stock stock) {
+	public String createStock(@RequestBody Stock stock) throws SpaceNotAvailable {
 		return service.createStock(stock);
 	}
 
-	@PutMapping("/update")
-	public Stock updateStock(@RequestBody Stock stock) {
-		return service.updateStock(stock);
+	@PutMapping("/updateInbound")
+	public Stock updateStockForInbound(@RequestBody Stock stock) {
+		return service.updateStockForInbound(stock);
+	}
+	
+	@PutMapping("/updateOutbound")
+	public Stock updateStockForOutbound(@RequestBody Stock stock) {
+		return service.updateStockForOutbound(stock);
 	}
 
 	@GetMapping("/fetchById/{id}")
-	public Stock viewStock(@PathVariable("id") int stockId) {
+	public Stock viewStock(@PathVariable("id") int stockId) throws StockNotFound {
 		return service.viewStock(stockId);
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public String deleteStock(@PathVariable("id") int stockId) {
+	public String deleteStock(@PathVariable("id") int stockId) throws StockNotFound {
 		return service.deleteStock(stockId);
 
 	}

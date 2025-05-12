@@ -1,12 +1,19 @@
 package com.cts.wios.service;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.cts.wios.dto.Stock;
+import com.cts.wios.dto.StockTransactionResponseDTO;
+import com.cts.wios.dto.UserRole;
+import com.cts.wios.dto.UserTransactionResponseDTO;
+import com.cts.wios.exceptions.TransactionLogNotFound;
+import com.cts.wios.feignclient.StockClient;
+import com.cts.wios.feignclient.UserClient;
 import com.cts.wios.model.TransactionLog;
 import com.cts.wios.repository.TransactionLogRepository;
 
@@ -14,6 +21,10 @@ import com.cts.wios.repository.TransactionLogRepository;
 public class TransactionLogServiceImpl implements TransactionLogService {
 	@Autowired
 	TransactionLogRepository repository;
+	@Autowired
+	StockClient stockClient;
+	@Autowired
+	UserClient userClient;
 
 	@Override
 	public String recordTransactionLog(TransactionLog transactionLog) {
@@ -22,9 +33,12 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	}
 
 	@Override
-	public TransactionLog getTransactionLogById(int transactionId) {
+	public TransactionLog getTransactionLogById(int transactionId) throws TransactionLogNotFound {
 		Optional<TransactionLog> optional = repository.findById(transactionId);
-		return optional.get();
+		if (optional.isPresent())
+			return optional.get();
+		else
+			throw new TransactionLogNotFound("transaction log not found");
 	}
 
 	@Override
@@ -33,23 +47,24 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	}
 
 	@Override
-	public List<TransactionLog> getTransactionLogsByStock(int stockId) {
-		return repository.findByStockIdIs(stockId);
-	}
+	public StockTransactionResponseDTO getTransactionLogsByStock(int stockId) {
+		List<TransactionLog> transactions = repository.findByStockIdIs(stockId);
+		Stock stock = stockClient.viewStock(stockId);
+		StockTransactionResponseDTO response = new StockTransactionResponseDTO(stock,transactions);
+		return response;
 
-	@Override
-	public List<TransactionLog> getTransactionLogsByVendor(int vendorId) {
-		return repository.findByVendorIdIs(vendorId);
 	}
-
+	
 	@Override
-	public List<TransactionLog> getTransactionLogsByTimestampBetween(LocalDate startDate, LocalDate endDate) {
-		return repository.findByTimestampBetween(startDate,endDate);
+	public List<TransactionLog> getTransactionLogsByZone(int zoneId) {
+		List<TransactionLog> transactions = repository.findByZoneIdIs(zoneId);
+		return transactions;
+
 	}
 
 	@Override
 	public List<TransactionLog> getTransactionLogsByPriceBetween(Double initialPrice, Double finalPrice) {
-		return repository.findByPriceBetween(initialPrice,finalPrice);
+		return repository.findByPriceBetween(initialPrice, finalPrice);
 	}
 
 	@Override
@@ -63,8 +78,17 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 		return "Transaction deleted successfully";
 	}
 
+	@Override
+	public List<TransactionLog> getTransactionLogsByTimestampBetween(LocalDateTime startDate, LocalDateTime endDate) {
+		return repository.findByTimestampBetween(startDate, endDate);
+	}
+
+	@Override
+	public UserTransactionResponseDTO getTransactionLogsByUser(int userId) {
+		List<TransactionLog> transaction = repository.findByStockIdIs(userId);
+		UserRole user = userClient.viewTransactionByUser(userId);
+		UserTransactionResponseDTO responseDTO = new UserTransactionResponseDTO(user, transaction);
+		return responseDTO;
+	}
+
 }
-//LocalDateTime dateTime = LocalDateTime.parse(timestamp);
-//
-//LocalDate date = dateTime.toLocalDate();
-//LocalTime time = dateTime.toLocalTime();

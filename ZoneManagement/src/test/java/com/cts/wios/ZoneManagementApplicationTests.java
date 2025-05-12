@@ -1,6 +1,7 @@
 package com.cts.wios;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,6 +13,10 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import com.cts.wios.dto.Stock;
+import com.cts.wios.dto.StockZoneResponseDTO;
+import com.cts.wios.exceptions.ZoneNotFound;
+import com.cts.wios.feignclient.StockClient;
 import com.cts.wios.model.Zone;
 import com.cts.wios.repository.ZoneRepository;
 import com.cts.wios.service.ZoneServiceImpl;
@@ -23,6 +28,10 @@ class ZoneManagementApplicationTests {
 
 	@InjectMocks
 	ZoneServiceImpl service;
+	@Mock
+	StockClient stockClient;
+	@Mock
+	StockZoneResponseDTO responseDTO;
 
 	@Test
 	void createZoneTest() {
@@ -41,7 +50,7 @@ class ZoneManagementApplicationTests {
 	}
 
 	@Test
-	void getZoneTest() {
+	void getZoneTest() throws ZoneNotFound {
 		int zoneId = 10;
 		Zone zone = new Zone(10, "hazmat zone", 150, 100);
 		Mockito.when(repository.findById(zoneId)).thenReturn(Optional.of(zone));
@@ -57,12 +66,36 @@ class ZoneManagementApplicationTests {
 		assertEquals(zones, response);
 	}
 
+
 	@Test
-	void deleteZoneTest() {
-		int zoneId = 10;
-		Mockito.doNothing().when(repository).deleteById(zoneId);
-		String response = service.deleteZone(zoneId);
-		assertEquals("Zone deleted", response);
+	void deleteZone_SuccessTest() {
+		Zone zone = new Zone(1, "soaps", 5, 3);
+		Mockito.when(repository.existsById(zone.getZoneId())).thenReturn(true);
+		Mockito.when(stockClient.getStocksByZone(zone.getZoneId())).thenReturn(responseDTO);
+		for (Stock stock : responseDTO.getStock()) {
+			Mockito.doNothing().when(stockClient).deleteStock(stock.getStockId());
+       }
+		Mockito.doNothing().when(repository).deleteById(zone.getZoneId());
+		String result = service.deleteZone(zone.getZoneId());
+		assertEquals("Zone and all the stocks present in the zone also deleted", result);
+	}
+
+	@Test
+	void deleteZone_NotFoundTest() {
+		Zone zone = new Zone(1, "soaps", 5, 3);
+		Mockito.when(repository.existsById(zone.getZoneId())).thenReturn(false);
+		String result = service.deleteZone(zone.getZoneId());
+		assertEquals("Zone not found", result);
+	}
+	@Test
+	void getZoneNotFoundTest() {
+		int zoneId = 1;
+
+		Mockito.when(repository.findById(zoneId)).thenReturn(Optional.empty());
+
+		assertThrows(ZoneNotFound.class, () -> {
+			service.viewZone(zoneId);
+		});
 	}
 
 }

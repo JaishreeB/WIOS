@@ -1,6 +1,8 @@
 package com.cts.wios.controller;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.cts.wios.dto.StockTransactionResponseDTO;
+import com.cts.wios.dto.UserTransactionResponseDTO;
+import com.cts.wios.exceptions.TransactionLogNotFound;
 import com.cts.wios.model.TransactionLog;
 import com.cts.wios.service.TransactionLogService;
 
@@ -28,7 +33,7 @@ public class TransactionLogController {
 	}
 
 	@GetMapping("/fetchById/{id}")
-	public TransactionLog getTransactionLogById(@PathVariable("id") int transactionLog) {
+	public TransactionLog getTransactionLogById(@PathVariable("id") int transactionLog) throws TransactionLogNotFound {
 		return service.getTransactionLogById(transactionLog);
 	}
 
@@ -44,34 +49,49 @@ public class TransactionLogController {
 	}
 
 	@GetMapping("/fetchAll")
-	public List<TransactionLog> getAllStocks() {
+	public List<TransactionLog> getAllTransactionLogs() {
 		return service.getAllTransactionLogs();
 	}
 
 	@GetMapping("/fetchByStock/{stock}")
-	public List<TransactionLog> getTransactionLogsByZone(@PathVariable("stock") int stockId) {
+	public StockTransactionResponseDTO getTransactionLogsByStock(@PathVariable("stock") int stockId) {
 		return service.getTransactionLogsByStock(stockId);
+	}
+	
+	@GetMapping("/fetchByZone/{zone}")
+	public List<TransactionLog> getTransactionLogsByZone(@PathVariable("zone") int zoneId) {
+		return service.getTransactionLogsByZone(zoneId);
 
 	}
 
-	@GetMapping("/fetchByVendor/{vendor}")
-	public List<TransactionLog> getTransactionLogsByVendor(@PathVariable("vendor") int vendorId) {
-		return service.getTransactionLogsByVendor(vendorId);
+
+	@GetMapping("/fetchByUser/{user}")
+	public UserTransactionResponseDTO getTransactionLogsByUser(@PathVariable("user") int userId) {
+		return service.getTransactionLogsByUser(userId);
 
 	}
 
 	
-	@GetMapping("/fetchByTimestamp/{start}/{end}")
-	public List<TransactionLog> getTransactionLogsByTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  LocalDate startDate,
+	@GetMapping("/fetchByDateTimestamp/{start}/{end}")
+	public List<TransactionLog> getTransactionLogsByDateTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  LocalDate startDate,
 			@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)  @PathVariable("end") LocalDate endDate) {
-		return service.getTransactionLogsByTimestampBetween(startDate, endDate);
+
+		// Convert LocalDate to LocalDateTime
+		LocalDateTime startDateTime = startDate.atStartOfDay();
+		LocalDateTime endDateTime = endDate.atTime(LocalTime.MAX);
+		return service.getTransactionLogsByTimestampBetween(startDateTime, endDateTime);
 	}
 
+	@GetMapping("/fetchByTimestamp/{start}/{end}")//http://localhost:9090/transactionlog/fetchByTimestamp/{start}/{end}
+	public List<TransactionLog> findByTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)  LocalDateTime startDate,
+			 @PathVariable("end") @DateTimeFormat(iso= DateTimeFormat.ISO.DATE_TIME) LocalDateTime endDate) {
+		return service.getTransactionLogsByTimestampBetween(startDate, endDate);
+	}
+ 
 	@GetMapping("/fetchByPrice/{initial}/{final}")
 	public List<TransactionLog> getTransactionLogsByPriceBetween(@PathVariable("initial") Double initialPrice,
 			@PathVariable("final") Double finalPrice) {
 		return service.getTransactionLogsByPriceBetween(initialPrice, finalPrice);
-
 	}
 
 }

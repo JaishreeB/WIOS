@@ -13,6 +13,8 @@ import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import com.cts.wios.dto.StockZoneResponseDTO;
+import com.cts.wios.exceptions.SpaceNotAvailable;
+import com.cts.wios.exceptions.StockNotFound;
 import com.cts.wios.model.Stock;
 import com.cts.wios.repository.StockRepository;
 import com.cts.wios.service.StockServiceImpl;
@@ -26,7 +28,7 @@ class StockManagementApplicationTests {
 	StockServiceImpl service;
 
 	@Test
-	void createStockTest() {
+	void createStockTest() throws SpaceNotAvailable {
 		Stock stock = new Stock(10,"chocolate","sweet",50,1,1);
 		Mockito.when(repository.save(stock)).thenReturn(stock);
 		String response = service.createStock(stock);
@@ -37,12 +39,12 @@ class StockManagementApplicationTests {
 	void updateStockTest() {
 		Stock stock = new Stock(10,"chocolate","sweet",50,1,1);
 		Mockito.when(repository.save(stock)).thenReturn(stock);
-		Stock response = service.updateStock(stock);
+		Stock response = service.updateStockForInbound(stock);
 		assertEquals(stock, response);
 	}
 
 	@Test
-	void getStockTest() {
+	void getStockTest() throws StockNotFound {
 		int stockId = 10;
 		Stock stock = new Stock(10,"chocolate","sweet",50,1,1);
 		Mockito.when(repository.findById(stockId)).thenReturn(Optional.of(stock));
@@ -59,7 +61,7 @@ class StockManagementApplicationTests {
 	}
 
 	@Test
-	void deleteStockTest() {
+	void deleteStockTest() throws StockNotFound {
 		int stockId = 10;
 		Mockito.doNothing().when(repository).deleteById(stockId);
 		String response = service.deleteStock(stockId);
