@@ -16,6 +16,8 @@ import com.cts.wios.model.Zone;
 import com.cts.wios.repository.ZoneRepository;
 
 @Service
+//@AllArgsConstructor
+
 public class ZoneServiceImpl implements ZoneService {
 	@Autowired
 	ZoneRepository repository;

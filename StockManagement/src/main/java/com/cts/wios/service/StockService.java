@@ -5,17 +5,17 @@ import java.util.List;
 import com.cts.wios.dto.StockVendorResponseDTO;
 import com.cts.wios.dto.StockZoneResponseDTO;
 import com.cts.wios.exceptions.SpaceNotAvailable;
-import com.cts.wios.exceptions.StockNotFound;
+import com.cts.wios.exceptions.StockNotFoundException;
 import com.cts.wios.model.Stock;
 
 public interface StockService {
 	public String createStock(Stock stock) throws SpaceNotAvailable;
 
-	public Stock updateStockForInbound(Stock stock);
+	public Stock updateStockForInbound(Stock stock) throws SpaceNotAvailable;
 
-	public Stock viewStock(int stockId) throws StockNotFound;
+	public Stock viewStock(int stockId) throws StockNotFoundException;
 
-	public String deleteStock(int stockeId) throws StockNotFound;
+	public String deleteStock(int stockeId) throws StockNotFoundException;
 
 	public List<Stock> getAllStocks();
 
@@ -25,5 +25,5 @@ public interface StockService {
 
 	public StockVendorResponseDTO getStocksByVendor(int vendorId);
 
-	public Stock updateStockForOutbound(Stock stock);
+	public Stock updateStockForOutbound(Stock stock) throws SpaceNotAvailable;
 }

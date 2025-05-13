@@ -29,8 +29,10 @@ public class CustomGlobalExceptionHandler {
 
 	}
 
-	@ExceptionHandler(value = StockNotFound.class)
-	public ResponseEntity<ExceptionResponse> handleAdminRegistrationException(StockNotFound exception,
+
+
+	@ExceptionHandler(value = StockNotFoundException.class)
+	public ResponseEntity<ExceptionResponse> handleStockException(StockNotFoundException exception,
 			WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
@@ -39,11 +41,10 @@ public class CustomGlobalExceptionHandler {
 		exceptionResponse.setMessage(exception.getMessage());
 
 		return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
-
 	}
 
 	@ExceptionHandler(value = SpaceNotAvailable.class)
-	public ResponseEntity<ExceptionResponse> handleAdminRegistrationException(SpaceNotAvailable exception,
+	public ResponseEntity<ExceptionResponse> handleSpaceAvailabilityException(SpaceNotAvailable exception,
 			WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();

@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cts.wios.dto.StockVendorResponseDTO;
 import com.cts.wios.dto.StockZoneResponseDTO;
 import com.cts.wios.exceptions.SpaceNotAvailable;
-import com.cts.wios.exceptions.StockNotFound;
+import com.cts.wios.exceptions.StockNotFoundException;
 import com.cts.wios.model.Stock;
 import com.cts.wios.service.StockService;
 
@@ -31,22 +31,22 @@ public class StockController {
 	}
 
 	@PutMapping("/updateInbound")
-	public Stock updateStockForInbound(@RequestBody Stock stock) {
+	public Stock updateStockForInbound(@RequestBody Stock stock) throws SpaceNotAvailable {
 		return service.updateStockForInbound(stock);
 	}
 	
 	@PutMapping("/updateOutbound")
-	public Stock updateStockForOutbound(@RequestBody Stock stock) {
+	public Stock updateStockForOutbound(@RequestBody Stock stock) throws SpaceNotAvailable {
 		return service.updateStockForOutbound(stock);
 	}
 
 	@GetMapping("/fetchById/{id}")
-	public Stock viewStock(@PathVariable("id") int stockId) throws StockNotFound {
+	public Stock viewStock(@PathVariable("id") int stockId) throws StockNotFoundException {
 		return service.viewStock(stockId);
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public String deleteStock(@PathVariable("id") int stockId) throws StockNotFound {
+	public String deleteStock(@PathVariable("id") int stockId) throws StockNotFoundException {
 		return service.deleteStock(stockId);
 
 	}
@@ -59,7 +59,6 @@ public class StockController {
 	@GetMapping("/fetchCategory/{category}")
 	public List<Stock> getStocksByCategory(@PathVariable("category") String category) {
 		return service.getStocksByCategory(category);
-
 	}
 
 	@GetMapping("/fetchZone/{zone}")

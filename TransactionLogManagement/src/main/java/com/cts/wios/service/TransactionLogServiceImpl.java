@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,6 +13,7 @@ import com.cts.wios.dto.Stock;
 import com.cts.wios.dto.StockTransactionResponseDTO;
 import com.cts.wios.dto.UserRole;
 import com.cts.wios.dto.UserTransactionResponseDTO;
+import com.cts.wios.exceptions.StockNotFoundException;
 import com.cts.wios.exceptions.TransactionLogNotFound;
 import com.cts.wios.feignclient.StockClient;
 import com.cts.wios.feignclient.UserClient;
@@ -25,32 +28,82 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	StockClient stockClient;
 	@Autowired
 	UserClient userClient;
+	
+	private static final Logger logger = LoggerFactory.getLogger(TransactionLogServiceImpl.class);
 
 	@Override
 	public String recordTransactionLog(TransactionLog transactionLog) {
+		int stockId = transactionLog.getStockId();
+		Stock stock = stockClient.viewStock(stockId);
+		if (stock == null) {
+			logger.error("Stock item not found with ID: {}", stockId);
+			throw new  StockNotFoundException("StockItem Not Found");
+		}
+		logger.info("Recording transaction log: {}", transactionLog);
 		repository.save(transactionLog);
-		return "Transaction saved successfully";
+		logger.info("Transaction log saved successfully: {}", transactionLog);
+		updateStockBasedOnTransaction(transactionLog);
+		return "Transaction Saved and Stock Updated!!!";
+	}
+	
+	private void updateStockBasedOnTransaction(TransactionLog transactionLog) throws StockNotFoundException {
+		logger.info("Updating stock item based on transaction: {}", transactionLog);
+		int stockId = transactionLog.getStockId();
+		Stock stock = stockClient.viewStock(stockId);
+
+		if (stock == null) {
+			logger.error("Stock item not found with ID: {}", stockId);
+			throw new StockNotFoundException("StockItem Not Found");
+		}
+
+		if (transactionLog.getType().equalsIgnoreCase("inbound")) {
+			logger.info("Processing inbound transaction for stock item: {}", stock);
+			stockClient.updateStockForInbound(stock);
+			stock.setStockQuantity(stock.getStockQuantity() + transactionLog.getQuantity());
+			stockClient.createStock(stock);
+			logger.info("Stock item updated successfully for inbound transaction: {}", stock);
+		} else if (transactionLog.getType().equalsIgnoreCase("outbound")) {
+			logger.info("Processing outbound transaction for stock item: {}", stock);
+			stockClient.updateStockForOutbound(stock);
+			stock.setStockQuantity(stock.getStockQuantity() - transactionLog.getQuantity());
+			stockClient.createStock(stock);
+			logger.info("Stock item updated successfully for outbound transaction: {}", stock);
+		} else {
+			logger.error("Invalid transaction type: {}", transactionLog.getType());
+			throw new IllegalArgumentException("Invalid transaction type");
+		}
 	}
 
 	@Override
 	public TransactionLog getTransactionLogById(int transactionId) throws TransactionLogNotFound {
+		logger.info("Retrieving transaction log with ID: {}", transactionId);
 		Optional<TransactionLog> optional = repository.findById(transactionId);
-		if (optional.isPresent())
+		if (optional.isPresent()) {
+			logger.info("Transaction log found: {}", optional.get());
 			return optional.get();
-		else
+		}
+			
+		else {
+			logger.error("Transaction log not found with ID: {}", transactionId);
 			throw new TransactionLogNotFound("transaction log not found");
+		}
 	}
 
 	@Override
 	public List<TransactionLog> getAllTransactionLogs() {
-		return repository.findAll();
+		logger.info("Retrieving all transaction logs");
+		List<TransactionLog> transactionLogs = repository.findAll();
+		logger.info("All transaction logs retrieved successfully");
+		return transactionLogs;
 	}
 
 	@Override
 	public StockTransactionResponseDTO getTransactionLogsByStock(int stockId) {
+		logger.info("Retrieving transaction logs for stock ID: {}", stockId);
 		List<TransactionLog> transactions = repository.findByStockIdIs(stockId);
 		Stock stock = stockClient.viewStock(stockId);
 		StockTransactionResponseDTO response = new StockTransactionResponseDTO(stock,transactions);
+		logger.info("Transaction logs retrieved successfully for stock ID: {}", stockId);
 		return response;
 
 	}
@@ -64,30 +117,44 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 
 	@Override
 	public List<TransactionLog> getTransactionLogsByPriceBetween(Double initialPrice, Double finalPrice) {
-		return repository.findByPriceBetween(initialPrice, finalPrice);
+		logger.info("Retrieving transaction logs between prices: {} and {}", initialPrice, finalPrice);
+		List<TransactionLog> transactionLogs = repository.findByPriceBetween(initialPrice, finalPrice);
+		logger.info("Transaction logs retrieved successfully between prices: {} and {}", initialPrice, finalPrice);
+		return transactionLogs;
+		
 	}
 
 	@Override
 	public List<TransactionLog> getTransactionLogsByType(String type) {
-		return repository.findByTypeIs(type);
+		logger.info("Retrieving transaction logs by type: {}", type);
+		List<TransactionLog> transactionLogs = repository.findByTypeIs(type);
+		logger.info("Transaction logs retrieved successfully by type: {}", type);
+		return transactionLogs;
 	}
 
 	@Override
 	public String deleteTransactionLog(int transactionId) {
+		logger.info("Deleting transaction log with ID: {}", transactionId);
 		repository.deleteById(transactionId);
+		logger.info("Transaction log deleted successfully: {}", transactionId);
 		return "Transaction deleted successfully";
 	}
 
 	@Override
 	public List<TransactionLog> getTransactionLogsByTimestampBetween(LocalDateTime startDate, LocalDateTime endDate) {
-		return repository.findByTimestampBetween(startDate, endDate);
+		logger.info("Retrieving transaction logs between timestamps: {} and {}", startDate, endDate);
+		List<TransactionLog> transactionLogs = repository.findByTimestampBetween(startDate, endDate);
+		logger.info("Transaction logs retrieved successfully between timestamps: {} and {}", startDate, endDate);
+		return transactionLogs;
 	}
 
 	@Override
 	public UserTransactionResponseDTO getTransactionLogsByUser(int userId) {
+		logger.info("Retrieving transaction logs for user ID: {}", userId);
 		List<TransactionLog> transaction = repository.findByStockIdIs(userId);
 		UserRole user = userClient.viewTransactionByUser(userId);
 		UserTransactionResponseDTO responseDTO = new UserTransactionResponseDTO(user, transaction);
+		logger.info("Transaction logs retrieved successfully for user ID: {}", userId);
 		return responseDTO;
 	}
 
