@@ -13,8 +13,14 @@ import com.google.common.net.HttpHeaders;
 import reactor.core.publisher.Mono;
 
 @Component
+
 public class AuthenticationFilter extends AbstractGatewayFilterFactory<AuthenticationFilter.Config> {
 
+	public AuthenticationFilter(RouteValidator validator, JwtUtil util) {
+		super();
+		this.validator = validator;
+		this.util = util;
+	}
 	@Autowired
 	private RouteValidator validator;
 
@@ -22,6 +28,9 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 	private JwtUtil util;
 
 	public static class Config {
+		/*
+		 * used for config
+		 */
 	}
 
 	public AuthenticationFilter() {
@@ -63,14 +72,6 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 			return path.startsWith("/stock") || path.startsWith("/zone") || path.startsWith("/transactionLog")||path.startsWith("/auth")
 					|| path.startsWith("/vendors")||path.startsWith("/metrics");
 		} 
-//			else if ("AGENT".equalsIgnoreCase(role)) {
-//			System.out.println("Checking....."+path.startsWith("/policy/assignPoliciesToAgent"));
-//			return path.startsWith("/agent") && method.equalsIgnoreCase("PUT")
-//					|| path.startsWith("/claim") && (method.equalsIgnoreCase("PUT") || method.equalsIgnoreCase("get")
-//							|| method.equalsIgnoreCase("DELETE"))
-//					|| path.startsWith("/customer") || path.startsWith("/notify") || path.startsWith("/policy") && !path.startsWith("/policy/assignPoliciesToAgent")
-//							&& (method.equalsIgnoreCase("PUT") || method.equalsIgnoreCase("DELETE"));
-//		} 
 			else if ("USER".equalsIgnoreCase(role)) {
 				return  path.startsWith("/stock")  || (path.startsWith("/zone")&& (method.equalsIgnoreCase("GET"))) || (path.startsWith("/vendors")&& (method.equalsIgnoreCase("GET"))) || path.startsWith("/transactionLog");
 		}

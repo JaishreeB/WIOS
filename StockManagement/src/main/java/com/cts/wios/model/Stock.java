@@ -1,6 +1,8 @@
 package com.cts.wios.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Min;
@@ -19,7 +21,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "stock_info")
 public class Stock {
     @Id
-    @Positive(message="Stock Id should be positive")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int stockId;
 
     @NotBlank(message = "Stock name cannot be blank")

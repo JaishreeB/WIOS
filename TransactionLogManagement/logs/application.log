@@ -1,0 +1,320 @@
+2025-06-11T05:48:30.087+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=6h7m56s623ms10µs600ns).
+2025-06-11T05:49:58.995+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T05:54:59.002+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T05:59:59.012+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:05:02.318+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:10:02.328+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:22:26.450+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=11m22s637ms259µs800ns).
+2025-06-11T06:25:54.961+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:30:54.968+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:35:54.969+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:40:54.975+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:45:54.979+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T07:04:25.857+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=14m58s976ms394µs600ns).
+2025-06-11T07:05:23.938+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T07:10:23.949+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:19:32.730+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=1h5m36s703ms883µs100ns).
+2025-06-11T08:20:30.654+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:25:30.668+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:30:30.678+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:35:30.690+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:38:56.778+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving transaction logs between timestamps: 2025-05-12T08:38:56.281194800 and 2025-06-11T08:38:56.281194800
+2025-06-11T08:38:56.919+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Transaction logs retrieved successfully between timestamps: 2025-05-12T08:38:56.281194800 and 2025-06-11T08:38:56.281194800
+2025-06-11T08:38:57.025+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving transaction logs between timestamps: 2025-05-12T08:38:56.281194800 and 2025-06-11T08:38:56.281194800
+2025-06-11T08:38:57.033+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Transaction logs retrieved successfully between timestamps: 2025-05-12T08:38:56.281194800 and 2025-06-11T08:38:56.281194800
+2025-06-11T08:40:30.704+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:45:30.711+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:50:30.712+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:55:30.719+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:05:27.570+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=9m54s337ms143µs100ns).
+2025-06-11T09:09:55.058+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:09:57.111+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:09:57.221+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:12:33.545+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:12:33.568+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:13:17.662+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:13:17.672+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:14:08.343+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:14:08.354+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:14:25.119+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:14:25.144+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:14:55.066+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:16:10.048+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:16:10.061+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:16:25.365+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:16:25.373+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:19:38.200+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:19:38.217+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:19:55.083+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:20:11.102+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:20:11.112+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:23:13.720+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:23:13.736+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:23:18.577+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:23:18.586+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:24:50.155+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:24:50.168+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:24:55.090+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:26:38.779+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:26:38.788+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:26:41.929+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:26:41.945+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:27:08.780+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:27:08.786+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:29:55.094+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:33:43.814+05:30  WARN 10168 --- [TransactionLog] [http-nio-1113-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator/info.]
+2025-06-11T09:33:44.171+05:30  WARN 10168 --- [TransactionLog] [http-nio-1113-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-06-11T09:34:55.098+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:36:40.494+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:36:40.503+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:39:55.113+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:41:22.534+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:41:22.534+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:41:29.921+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:41:29.928+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:41:34.632+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:41:34.648+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:42:07.083+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:42:07.083+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:42:48.821+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:42:48.826+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:42:53.417+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:42:53.435+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:44:13.395+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:44:13.395+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:44:55.123+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:48:44.872+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:48:44.903+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:49:09.086+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Recording transaction log: TransactionLog(transactionId=0, stockId=13, stockName=Beetroot, userId=1, userName=karthik, zoneId=19, zoneName=Vegetables Zone, quantity=2, type=OUTBOUND, timestamp=null, price=200.0)
+2025-06-11T09:49:09.131+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Transaction log saved successfully: TransactionLog(transactionId=6, stockId=13, stockName=Beetroot, userId=1, userName=karthik, zoneId=19, zoneName=Vegetables Zone, quantity=2, type=OUTBOUND, timestamp=2025-06-11T09:49:09.117062, price=200.0)
+2025-06-11T09:49:09.132+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Updating stock item based on transaction: TransactionLog(transactionId=6, stockId=13, stockName=Beetroot, userId=1, userName=karthik, zoneId=19, zoneName=Vegetables Zone, quantity=2, type=OUTBOUND, timestamp=2025-06-11T09:49:09.117062, price=200.0)
+2025-06-11T09:49:09.138+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Processing outbound transaction for stock item: Stock(stockId=13, stockName=Beetroot, stockCategory=Vegetable, stockQuantity=9, zoneId=19, vendorId=10)
+2025-06-11T09:49:13.285+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:49:13.285+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:49:55.163+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:50:09.150+05:30  WARN 10168 --- [TransactionLog] [http-nio-1113-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [feign.RetryableException: Read timed out executing PUT http://STOCKMANAGEMENT/stock/updateOutbound]
+2025-06-11T09:53:00.348+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving transaction logs between timestamps: 2025-05-12T09:53:00.245828600 and 2025-06-11T09:53:00.245828600
+2025-06-11T09:53:00.373+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Transaction logs retrieved successfully between timestamps: 2025-05-12T09:53:00.245828600 and 2025-06-11T09:53:00.245828600
+2025-06-11T09:53:00.390+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving transaction logs between timestamps: 2025-05-12T09:53:00.245828600 and 2025-06-11T09:53:00.245828600
+2025-06-11T09:53:00.398+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Transaction logs retrieved successfully between timestamps: 2025-05-12T09:53:00.245828600 and 2025-06-11T09:53:00.245828600
+2025-06-11T09:54:55.181+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:55:45.724+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:55:45.724+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:55:55.374+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:55:55.379+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:55:58.067+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:55:58.073+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:57:21.638+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:57:21.643+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:57:36.229+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Recording transaction log: TransactionLog(transactionId=0, stockId=16, stockName=charger cables, userId=1, userName=karthik, zoneId=20, zoneName=Electronics Zone, quantity=10, type=OUTBOUND, timestamp=null, price=1000.0)
+2025-06-11T09:57:36.240+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Transaction log saved successfully: TransactionLog(transactionId=7, stockId=16, stockName=charger cables, userId=1, userName=karthik, zoneId=20, zoneName=Electronics Zone, quantity=10, type=OUTBOUND, timestamp=2025-06-11T09:57:36.229140, price=1000.0)
+2025-06-11T09:57:36.240+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Updating stock item based on transaction: TransactionLog(transactionId=7, stockId=16, stockName=charger cables, userId=1, userName=karthik, zoneId=20, zoneName=Electronics Zone, quantity=10, type=OUTBOUND, timestamp=2025-06-11T09:57:36.229140, price=1000.0)
+2025-06-11T09:57:36.240+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Processing outbound transaction for stock item: Stock(stockId=16, stockName=charger cables, stockCategory=wires, stockQuantity=10, zoneId=20, vendorId=9)
+2025-06-11T09:57:38.971+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T09:57:38.971+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T09:58:36.263+05:30  WARN 10168 --- [TransactionLog] [http-nio-1113-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [feign.RetryableException: Read timed out executing PUT http://STOCKMANAGEMENT/stock/updateOutbound]
+2025-06-11T09:59:55.183+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:00:00.073+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving transaction logs between timestamps: 2025-05-12T10:00:00.011766700 and 2025-06-11T10:00:00.012876500
+2025-06-11T10:00:00.073+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Transaction logs retrieved successfully between timestamps: 2025-05-12T10:00:00.011766700 and 2025-06-11T10:00:00.012876500
+2025-06-11T10:00:00.091+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving transaction logs between timestamps: 2025-05-12T10:00:00.011766700 and 2025-06-11T10:00:00.012876500
+2025-06-11T10:00:00.105+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Transaction logs retrieved successfully between timestamps: 2025-05-12T10:00:00.011766700 and 2025-06-11T10:00:00.012876500
+2025-06-11T10:04:55.189+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:07:25.975+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:07:25.991+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:07:35.658+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:07:35.674+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:09:55.197+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:14:55.208+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:19:55.222+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:22:45.736+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:22:45.750+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:22:49.247+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:22:49.258+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:24:55.229+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:28:46.402+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:28:46.414+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:29:45.182+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:29:45.199+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:29:47.484+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:29:47.490+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:29:55.232+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:30:51.527+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:30:51.543+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:30:52.193+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:30:52.196+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:31:15.057+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:31:15.065+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:31:45.581+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:31:45.587+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:34:55.247+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:39:55.248+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:42:56.947+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:42:56.952+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:43:01.319+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:43:01.328+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:44:55.250+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:49:05.151+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:49:05.183+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:49:18.403+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:49:18.426+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:49:55.253+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:49:59.102+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:49:59.110+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:50:01.903+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:50:01.920+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:50:49.579+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:50:49.587+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:50:51.951+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:50:51.974+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:51:01.407+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:51:01.422+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:51:05.137+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T10:51:05.166+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T10:54:55.257+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:02:14.351+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m44s177ms745µs500ns).
+2025-06-11T11:03:09.447+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:19:45.695+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=13m31s264ms586µs400ns).
+2025-06-11T11:21:10.731+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:23:15.178+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=59s434ms770µs700ns).
+2025-06-11T11:26:40.165+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:36:29.812+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=7m44s523ms125µs500ns).
+2025-06-11T11:38:54.694+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:46:59.723+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:47:29.827+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m59s906ms339µs500ns).
+2025-06-11T11:49:31.888+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T11:49:31.905+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T11:50:24.031+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T11:50:24.036+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T11:52:24.605+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:57:24.626+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:02:24.629+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:07:24.642+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:16:11.987+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=5m10s471ms30µs800ns).
+2025-06-11T12:17:05.110+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:19:31.315+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=49s302ms809µs800ns).
+2025-06-11T12:22:05.131+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:27:05.136+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:32:05.154+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:37:05.168+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:36:58.753+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=58m27s132ms13µs600ns).
+2025-06-11T13:40:02.404+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:48:03.496+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m34s665ms395µs800ns).
+2025-06-11T13:48:07.062+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:53:07.069+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:58:07.071+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:03:07.088+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:10:38.668+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m34s856ms675µs700ns).
+2025-06-11T14:11:11.942+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:16:11.948+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:21:11.953+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:26:11.961+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:27:03.134+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=54s216ms684µs899ns).
+2025-06-11T14:31:36.180+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:42:08.799+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=7m35s525ms325µs400ns).
+2025-06-11T14:43:41.712+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:48:41.727+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:53:41.735+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:09:13.550+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=13m34s500ms843µs100ns).
+2025-06-11T15:11:46.241+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:16:46.243+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:21:46.257+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:26:46.272+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:31:46.278+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:31:49.927+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:31:50.079+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:33:02.749+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:33:02.773+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:33:41.075+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:33:41.093+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:34:02.193+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:34:02.197+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:35:06.922+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:35:06.926+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:35:09.041+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:35:09.055+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:36:46.281+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:41:46.289+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:44:47.006+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:44:47.020+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:45:27.552+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:45:27.562+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:45:31.617+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:45:31.617+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:46:57.857+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:47:41.613+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=45s944ms265µs100ns).
+2025-06-11T15:50:08.843+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:50:08.856+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:50:13.772+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T15:50:13.780+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T15:52:13.796+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:57:13.810+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:14:34.646+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:14:34.652+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:14:38.597+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=12m56s724ms76µs100ns).
+2025-06-11T16:14:40.534+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:19:40.544+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:23:52.037+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:23:52.047+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:23:56.649+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:23:56.665+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:24:20.482+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:24:20.491+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:24:40.551+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:24:42.712+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:24:42.724+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:26:46.281+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:26:46.289+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:29:40.567+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:33:04.741+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:33:04.754+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:34:42.173+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:40:42.425+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=4m31s888ms151µs100ns).
+2025-06-11T16:50:53.569+05:30  WARN 10168 --- [TransactionLog] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=9m11s118ms998µs700ns).
+2025-06-11T16:52:25.173+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:54:56.545+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:54:56.557+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:57:25.183+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:58:10.665+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:58:10.674+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:58:13.377+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:58:13.385+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:58:14.122+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:58:14.128+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-10] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:59:08.314+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:59:08.322+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:59:09.149+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:59:09.151+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:59:09.975+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:59:09.982+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:59:13.189+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:59:13.197+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:59:14.332+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:59:14.342+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T16:59:36.758+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T16:59:36.769+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:01:04.764+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:01:04.773+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-6] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:01:42.673+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:01:42.687+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-7] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:02:25.200+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T17:07:05.518+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:07:05.535+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-1] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:07:25.202+05:30  INFO 10168 --- [TransactionLog] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T17:07:26.671+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:07:26.687+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-2] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:07:49.269+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Recording transaction log: TransactionLog(transactionId=0, stockId=15, stockName=Straw berry, userId=1, userName=karthik, zoneId=18, zoneName=Fruits Zone, quantity=10, type=OUTBOUND, timestamp=null, price=1000.0)
+2025-06-11T17:07:49.386+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Transaction log saved successfully: TransactionLog(transactionId=8, stockId=15, stockName=Straw berry, userId=1, userName=karthik, zoneId=18, zoneName=Fruits Zone, quantity=10, type=OUTBOUND, timestamp=2025-06-11T17:07:49.356170, price=1000.0)
+2025-06-11T17:07:49.387+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Updating stock item based on transaction: TransactionLog(transactionId=8, stockId=15, stockName=Straw berry, userId=1, userName=karthik, zoneId=18, zoneName=Fruits Zone, quantity=10, type=OUTBOUND, timestamp=2025-06-11T17:07:49.356170, price=1000.0)
+2025-06-11T17:07:49.398+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-3] c.c.w.service.TransactionLogServiceImpl  : Processing outbound transaction for stock item: Stock(stockId=15, stockName=Straw berry, stockCategory=fruits, stockQuantity=20, zoneId=18, vendorId=14)
+2025-06-11T17:07:56.262+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:07:56.279+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-4] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:08:09.444+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Recording transaction log: TransactionLog(transactionId=0, stockId=15, stockName=Straw berry, userId=1, userName=karthik, zoneId=18, zoneName=Fruits Zone, quantity=1, type=OUTBOUND, timestamp=null, price=10.0)
+2025-06-11T17:08:09.459+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Transaction log saved successfully: TransactionLog(transactionId=9, stockId=15, stockName=Straw berry, userId=1, userName=karthik, zoneId=18, zoneName=Fruits Zone, quantity=1, type=OUTBOUND, timestamp=2025-06-11T17:08:09.446807, price=10.0)
+2025-06-11T17:08:09.459+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Updating stock item based on transaction: TransactionLog(transactionId=9, stockId=15, stockName=Straw berry, userId=1, userName=karthik, zoneId=18, zoneName=Fruits Zone, quantity=1, type=OUTBOUND, timestamp=2025-06-11T17:08:09.446807, price=10.0)
+2025-06-11T17:08:09.469+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-5] c.c.w.service.TransactionLogServiceImpl  : Processing outbound transaction for stock item: Stock(stockId=15, stockName=Straw berry, stockCategory=fruits, stockQuantity=10, zoneId=18, vendorId=14)
+2025-06-11T17:08:17.428+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:08:17.445+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-8] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:08:19.497+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : Retrieving all transaction logs
+2025-06-11T17:08:19.504+05:30  INFO 10168 --- [TransactionLog] [http-nio-1113-exec-9] c.c.w.service.TransactionLogServiceImpl  : All transaction logs retrieved successfully
+2025-06-11T17:08:49.437+05:30  WARN 10168 --- [TransactionLog] [http-nio-1113-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [feign.RetryableException: Read timed out executing PUT http://STOCKMANAGEMENT/stock/updateOutbound]
+2025-06-11T17:09:09.478+05:30  WARN 10168 --- [TransactionLog] [http-nio-1113-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [feign.RetryableException: Read timed out executing PUT http://STOCKMANAGEMENT/stock/updateOutbound]

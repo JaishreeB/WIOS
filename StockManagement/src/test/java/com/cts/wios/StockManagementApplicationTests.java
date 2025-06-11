@@ -34,7 +34,7 @@ import com.cts.wios.service.StockServiceImpl;
 
 @ExtendWith(MockitoExtension.class)
 @SpringBootTest
-public class StockManagementApplicationTests {
+class StockManagementApplicationTests {
 
 	@Mock
 	private StockRepository repository;
@@ -102,7 +102,7 @@ public class StockManagementApplicationTests {
 	}
 
 	@Test
-	void testUpdateStockForOutboundSuccess() throws SpaceNotAvailable, ZoneNotFoundException {
+	void testUpdateStockForOutboundSuccess() throws  ZoneNotFoundException {
 		when(zoneClient.viewZone(1)).thenReturn(zone);
 		when(repository.save(stock)).thenReturn(stock);
 

@@ -5,6 +5,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpringSecurityLatestApplicationTests {
+	/*
+	 * default test case
+	 */
+	@Test
+	void contextLoads() {
+	}
 
 
 }

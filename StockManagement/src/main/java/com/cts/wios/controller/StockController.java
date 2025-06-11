@@ -19,7 +19,10 @@ import com.cts.wios.exceptions.StockNotFoundException;
 import com.cts.wios.model.Stock;
 import com.cts.wios.service.StockService;
 
+import lombok.AllArgsConstructor;
+
 @RestController
+@AllArgsConstructor
 @RequestMapping("/stock")
 public class StockController {
 	@Autowired

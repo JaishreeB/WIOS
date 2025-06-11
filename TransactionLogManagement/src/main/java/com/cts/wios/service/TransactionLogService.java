@@ -15,7 +15,7 @@ public interface TransactionLogService {
 	
 	public List<TransactionLog> getAllTransactionLogs();
 
-	public String deleteTransactionLog(int transactionId);
+	public String deleteTransactionLog(int transactionId) throws TransactionLogNotFound;
 
 	public List<TransactionLog> getTransactionLogsByPriceBetween(Double initialPrice,Double finalPrice);
 	

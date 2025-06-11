@@ -27,6 +27,11 @@ public class VendorServiceImpl implements VendorService {
 
 	@Autowired
 	VendorRepository repository;
+	public VendorServiceImpl(VendorRepository repository) {
+		super();
+		this.repository = repository;
+	}
+
 	Logger logger = LoggerFactory.getLogger(VendorServiceImpl.class);
 
 	@Override

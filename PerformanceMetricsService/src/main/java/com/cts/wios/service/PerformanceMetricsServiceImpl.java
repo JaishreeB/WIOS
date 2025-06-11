@@ -3,6 +3,7 @@ package com.cts.wios.service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 
@@ -18,17 +19,19 @@ import lombok.AllArgsConstructor;
 @Service
 @AllArgsConstructor
 public class PerformanceMetricsServiceImpl implements PerformanceMetricsService {
-
+	@Autowired
 	PerformanceMetricsRepository repository;
-
+	@Autowired
 	ZoneClient zoneClient;
-
+	@Autowired
 	TransactionLogClient transactionClient;
 
-	@Scheduled(cron = "0 0 0 * * ?") // at every midnight
+	@Scheduled(cron = "0 00 10 * * ?", zone = "Asia/Kolkata")
 	public void scheduleMetricsCalculation() {
-		calculateAndSaveMetrics();
+	    System.out.println("Scheduled task triggered at: " + LocalDateTime.now());
+	    calculateAndSaveMetrics();
 	}
+
 
 	@Override
 	public void calculateAndSaveMetrics() {

@@ -29,14 +29,14 @@ class VendorManagementServiceApplicationTests {
 
 	@Test
 	void saveVendorTest() {
-		Vendor vendor =new Vendor(2,"jaishree",98765544444L);
+		Vendor vendor =new Vendor(2,"jaishree","98765544444","jaishree.bakya@gmail.com");
 		Mockito.when(repository.save(vendor)).thenReturn(vendor);
 		String response = service.saveVendor(vendor);
 		assertEquals("Vendor Saved!!!", response);
 	}
 	@Test
 	void updateVendorTest() {
-	Vendor vendor = new Vendor(2,"jaishree",98765544444L);
+	Vendor vendor = new Vendor(2,"jaishree","98765544444","jaishree.bakya@gmail.com");
 	vendor.setVendorId(1);
 
 		Mockito.when(repository.save(vendor)).thenReturn(vendor);
@@ -57,7 +57,7 @@ class VendorManagementServiceApplicationTests {
 	@Test
 	void getVendorTest() throws VendorNotFound {
 		int vendorId = 1;
-		Vendor vendor = new Vendor(2,"jaishree",98765544444L);
+		Vendor vendor = new Vendor(2,"jaishree","98765544444","jaishree.bakya@gmail.com");
 		vendor.setVendorId(vendorId);
  
 		Mockito.when(repository.findById(vendorId)).thenReturn(Optional.of(vendor));
@@ -78,8 +78,8 @@ class VendorManagementServiceApplicationTests {
 
 	@Test
 	void getAllVendorsTest() {
-		List<Vendor> vendors = Arrays.asList(new Vendor(2,"jai",98765544444L),
-			new Vendor(3,"jann",98765544444L));
+		List<Vendor> vendors = Arrays.asList(new Vendor(2,"jaishree","98765544444","jaishree.bakya@gmail.com"),
+			new Vendor(3,"jaishree","98765544444","jaishree.bakya@gmail.com"));
  
 		Mockito.when(repository.findAll()).thenReturn(vendors);
  

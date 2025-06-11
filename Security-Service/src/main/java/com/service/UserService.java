@@ -2,6 +2,8 @@ package com.service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -11,7 +13,10 @@ import com.entity.UserInfo;
 import com.exceptions.UserRoleNotFound;
 import com.repository.UserInfoRepository;
 
+import lombok.AllArgsConstructor;
+
 @Service
+@AllArgsConstructor
 public class UserService {
 	@Autowired
 	private UserInfoRepository repository;
@@ -21,7 +26,6 @@ public class UserService {
 	public String addUser(UserInfo userInfo) {
 		String name = userInfo.getName();
 		UserInfo obj1 = repository.findByName(name).orElse(null);
-		System.out.println(obj1);
 		if (obj1 == null) {
 			userInfo.setPassword(passwordEncoder.encode(userInfo.getPassword()));
 			repository.save(userInfo);
@@ -39,7 +43,6 @@ public class UserService {
 		return "Not Found";
 	}
 
-
 	public String removeUser(int id) {
 		repository.deleteById(id);
 		return "User Deleted!!!";
@@ -56,4 +59,20 @@ public class UserService {
 	public List<UserInfo> getAllUsers() {
 		return repository.findAll();
 	}
+
+	public int getUserId(String username) {
+		UserInfo obj2 = repository.findByName(username).orElse(null);
+		if (obj2 != null) {
+			return obj2.getId();
+		}
+		return 0;
+	}
+
+public List<String> getAllAdminEmails() {
+	List<UserInfo> admins = repository.findByRoles("ADMIN");
+	return admins.stream()
+	.map(UserInfo::getEmail)
+	.collect(Collectors.toList());
+}
+
 }

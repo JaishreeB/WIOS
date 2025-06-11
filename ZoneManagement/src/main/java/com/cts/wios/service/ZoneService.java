@@ -15,4 +15,6 @@ public interface ZoneService {
 	public String deleteZone(int warehouseZoneId);
 	
 	public List<Zone> getAllZone();
+
+	public String getZoneNameById(int warehouseZoneId) throws ZoneNotFound;
 }

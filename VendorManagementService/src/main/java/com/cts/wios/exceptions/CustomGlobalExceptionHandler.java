@@ -1,6 +1,5 @@
 package com.cts.wios.exceptions;
 
-
 import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.HashMap;
@@ -16,30 +15,28 @@ import org.springframework.web.context.request.WebRequest;
 
 @ControllerAdvice
 public class CustomGlobalExceptionHandler {
-	
+
 	@ExceptionHandler(value = MethodArgumentNotValidException.class)
 	public ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex) {
 
 		Map<String, Object> body = new HashMap<>();
 		body.put("timestamp", new Date());
 		// Get all errors
-		ex.getBindingResult().getAllErrors().forEach(error -> {
-				body.put(((FieldError)error).getField(),error.getDefaultMessage());
-			});
-		return new ResponseEntity<Object>(body, HttpStatus.BAD_REQUEST);
+		ex.getBindingResult().getAllErrors()
+				.forEach(error -> body.put(((FieldError) error).getField(), error.getDefaultMessage()));
+		return new ResponseEntity<>(body, HttpStatus.BAD_REQUEST);
 
 	}
 
 	@ExceptionHandler(value = VendorNotFound.class)
-	public ResponseEntity<ExceptionResponse> handleException(VendorNotFound exception,
-			WebRequest webRequest) {
+	public ResponseEntity<ExceptionResponse> handleException(VendorNotFound exception, WebRequest webRequest) {
 
 		ExceptionResponse exceptionResponse = new ExceptionResponse();
 		exceptionResponse.setStatus(404);
 		exceptionResponse.setTime(LocalDateTime.now());
 		exceptionResponse.setMessage(exception.getMessage());
 
-		return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
 
 	}
 
@@ -51,7 +48,7 @@ public class CustomGlobalExceptionHandler {
 		exceptionResponse.setTime(LocalDateTime.now());
 		exceptionResponse.setMessage(exception.getMessage());
 
-		return new ResponseEntity<ExceptionResponse>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
+		return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_ACCEPTABLE);
 
 	}
 }

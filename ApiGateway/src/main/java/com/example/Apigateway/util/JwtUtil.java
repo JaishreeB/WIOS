@@ -21,9 +21,9 @@ public class JwtUtil {
 
     public String extractRolesFromToken(final String token) {
         Claims claims = Jwts.parserBuilder().setSigningKey(getSignKey()).build().parseClaimsJws(token).getBody();
-        System.out.println("Step2"+ claims);
+//        System.out.println("Step2"+ claims);
         String authorities = (String) claims.get("roles"); // Assuming roles are stored as a List<String> in "roles" claim
-        System.out.println("Step3"+ authorities);
+//        System.out.println("Step3"+ authorities);
         // Convert authorities to roles in the format "ROLE_ADMIN" or "ROLE_USER"
 
         return authorities;

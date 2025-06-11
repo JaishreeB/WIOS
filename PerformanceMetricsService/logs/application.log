@@ -1,0 +1,328 @@
+2025-06-11T05:48:35.686+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h7m56s631ms564µs100ns).
+2025-06-11T05:51:41.745+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T05:56:41.746+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:01:41.748+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:06:45.051+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:22:32.083+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m22s641ms482µs100ns).
+2025-06-11T06:22:37.694+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:27:37.699+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:32:37.712+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:37:37.723+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:42:37.740+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T06:47:37.748+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T07:04:31.542+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m58s961ms645µs800ns).
+2025-06-11T07:07:06.712+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T07:12:06.725+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:19:38.384+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m36s715ms700µs500ns).
+2025-06-11T08:22:13.435+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:27:13.435+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:32:13.437+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:37:13.444+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:42:13.455+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:47:13.472+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T08:52:13.485+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:05:33.334+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m54s359ms679µs800ns).
+2025-06-11T09:06:37.830+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:11:37.842+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:16:37.845+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:21:37.846+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:26:37.857+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:31:37.861+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:36:37.864+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:41:37.885+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:46:37.895+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:51:37.934+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:52:07.333+05:30  INFO 11128 --- [PerformanceMetricsService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T09:52:07.348+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PERFORMANCEMETRICSSERVICE with eureka with status DOWN
+2025-06-11T09:52:07.349+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749615727349, current=DOWN, previous=UP]
+2025-06-11T09:52:07.350+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096: registering service...
+2025-06-11T09:52:07.382+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T09:52:07.388+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-06-11T09:52:07.398+05:30  INFO 11128 --- [PerformanceMetricsService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T09:52:07.429+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:52:07.457+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-11T09:52:07.466+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-11T09:52:07.468+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T09:52:10.470+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T09:52:10.483+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - deregister  status: 200
+2025-06-11T09:52:10.484+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T09:52:12.349+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Starting PerformanceMetricsServiceApplication using Java 21.0.6 with PID 11128 (C:\Users\2400862\git\wios\PerformanceMetricsService\target\classes started by 2400862 in C:\Users\2400862\git\wios\PerformanceMetricsService)
+2025-06-11T09:52:12.350+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:52:12.353+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-11T09:52:12.354+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=PerformanceMetricsService, profiles=[default], label=null, version=c88a442f8c3c6c3da9a186868e18cf49549e12dc, state=
+2025-06-11T09:52:13.354+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:52:13.407+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-06-11T09:52:13.756+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ba8c192d-6bc1-369b-9b05-e00ff730627a
+2025-06-11T09:52:14.149+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9096 (http)
+2025-06-11T09:52:14.155+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T09:52:14.155+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T09:52:14.326+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T09:52:14.326+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1972 ms
+2025-06-11T09:52:14.478+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:52:14.489+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:52:14.552+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:52:14.556+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-06-11T09:52:14.596+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22d8a125
+2025-06-11T09:52:14.597+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-06-11T09:52:14.602+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:52:14.603+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T09:52:14.740+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:52:14.764+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:52:14.948+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:52:15.023+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-11T09:52:15.087+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ZONEMANAGEMENT' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:52:15.126+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'TRANSACTIONLOG' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:52:15.388+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T09:52:15.414+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T09:52:15.458+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T09:52:15.465+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T09:52:15.465+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:52:15.466+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T09:52:15.466+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T09:52:15.466+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T09:52:15.467+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T09:52:15.467+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T09:52:15.467+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T09:52:15.467+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T09:52:15.528+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T09:52:15.529+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T09:52:15.529+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T09:52:15.530+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749615735530 with initial instances count: 8
+2025-06-11T09:52:15.532+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PERFORMANCEMETRICSSERVICE with eureka with status UP
+2025-06-11T09:52:15.532+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749615735532, current=UP, previous=STARTING]
+2025-06-11T09:52:15.533+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096: registering service...
+2025-06-11T09:52:15.542+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9096 (http) with context path '/'
+2025-06-11T09:52:15.542+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2025-06-11T09:52:15.550+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-06-11T09:52:15.569+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Started PerformanceMetricsServiceApplication in 4.721 seconds (process running for 50403.934)
+2025-06-11T09:52:15.573+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T09:52:16.771+05:30  INFO 11128 --- [PerformanceMetricsService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T09:52:16.774+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PERFORMANCEMETRICSSERVICE with eureka with status DOWN
+2025-06-11T09:52:16.775+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749615736775, current=DOWN, previous=UP]
+2025-06-11T09:52:16.775+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096: registering service...
+2025-06-11T09:52:16.775+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T09:52:16.778+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-06-11T09:52:16.779+05:30  INFO 11128 --- [PerformanceMetricsService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T09:52:16.782+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:52:16.783+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-06-11T09:52:16.787+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-06-11T09:52:16.788+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T09:52:19.789+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T09:52:19.793+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - deregister  status: 200
+2025-06-11T09:52:19.793+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T09:52:20.656+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Starting PerformanceMetricsServiceApplication using Java 21.0.6 with PID 11128 (C:\Users\2400862\git\wios\PerformanceMetricsService\target\classes started by 2400862 in C:\Users\2400862\git\wios\PerformanceMetricsService)
+2025-06-11T09:52:20.656+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:52:20.658+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-11T09:52:20.658+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=PerformanceMetricsService, profiles=[default], label=null, version=c88a442f8c3c6c3da9a186868e18cf49549e12dc, state=
+2025-06-11T09:52:20.797+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:52:20.807+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-06-11T09:52:20.907+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ba8c192d-6bc1-369b-9b05-e00ff730627a
+2025-06-11T09:52:20.959+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9096 (http)
+2025-06-11T09:52:20.960+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T09:52:20.960+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T09:52:20.992+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T09:52:20.992+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 334 ms
+2025-06-11T09:52:21.020+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:52:21.022+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:52:21.029+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:52:21.030+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-06-11T09:52:21.042+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20cbd765
+2025-06-11T09:52:21.042+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-06-11T09:52:21.043+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:52:21.044+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T09:52:21.074+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:52:21.087+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:52:21.149+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:52:21.162+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-11T09:52:21.186+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ZONEMANAGEMENT' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:52:21.207+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'TRANSACTIONLOG' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:52:21.334+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T09:52:21.344+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T09:52:21.376+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T09:52:21.381+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T09:52:21.401+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T09:52:21.402+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T09:52:21.402+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T09:52:21.403+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749615741403 with initial instances count: 8
+2025-06-11T09:52:21.406+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PERFORMANCEMETRICSSERVICE with eureka with status UP
+2025-06-11T09:52:21.406+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749615741406, current=UP, previous=STARTING]
+2025-06-11T09:52:21.407+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096: registering service...
+2025-06-11T09:52:21.412+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9096 (http) with context path '/'
+2025-06-11T09:52:21.413+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2025-06-11T09:52:21.422+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-06-11T09:52:21.427+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Started PerformanceMetricsServiceApplication in 1.571 seconds (process running for 50409.793)
+2025-06-11T09:52:21.428+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T09:53:36.010+05:30  INFO 11128 --- [PerformanceMetricsService] [http-nio-9096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T09:53:36.010+05:30  INFO 11128 --- [PerformanceMetricsService] [http-nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T09:53:36.014+05:30  INFO 11128 --- [PerformanceMetricsService] [http-nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-06-11T09:57:17.154+05:30  INFO 11128 --- [PerformanceMetricsService] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-11T09:57:17.155+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PERFORMANCEMETRICSSERVICE with eureka with status DOWN
+2025-06-11T09:57:17.155+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749616037155, current=DOWN, previous=UP]
+2025-06-11T09:57:17.155+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096: registering service...
+2025-06-11T09:57:17.155+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-11T09:57:17.159+05:30  INFO 11128 --- [PerformanceMetricsService] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-11T09:57:17.162+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:57:17.162+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-06-11T09:57:17.166+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-06-11T09:57:17.166+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-11T09:57:17.172+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-06-11T09:57:17.172+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-11T09:57:17.173+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - deregister  status: 200
+2025-06-11T09:57:17.174+05:30  INFO 11128 --- [PerformanceMetricsService] [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-11T09:57:18.034+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Starting PerformanceMetricsServiceApplication using Java 21.0.6 with PID 11128 (C:\Users\2400862\git\wios\PerformanceMetricsService\target\classes started by 2400862 in C:\Users\2400862\git\wios\PerformanceMetricsService)
+2025-06-11T09:57:18.034+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : No active profile set, falling back to 1 default profile: "default"
+2025-06-11T09:57:18.038+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-11T09:57:18.038+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=PerformanceMetricsService, profiles=[default], label=null, version=c88a442f8c3c6c3da9a186868e18cf49549e12dc, state=
+2025-06-11T09:57:18.212+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-11T09:57:18.219+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-06-11T09:57:18.304+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ba8c192d-6bc1-369b-9b05-e00ff730627a
+2025-06-11T09:57:18.349+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9096 (http)
+2025-06-11T09:57:18.350+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-11T09:57:18.350+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-11T09:57:18.378+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-11T09:57:18.378+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2025-06-11T09:57:18.401+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-11T09:57:18.404+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-11T09:57:18.410+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-11T09:57:18.411+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-06-11T09:57:18.421+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@222d0bc3
+2025-06-11T09:57:18.422+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-06-11T09:57:18.423+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-11T09:57:18.424+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-11T09:57:18.453+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-11T09:57:18.465+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-11T09:57:18.522+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-11T09:57:18.535+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-11T09:57:18.556+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'ZONEMANAGEMENT' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:57:18.578+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'TRANSACTIONLOG' URL not provided. Will try picking an instance via load-balancing.
+2025-06-11T09:57:18.685+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-11T09:57:18.691+05:30  WARN 11128 --- [PerformanceMetricsService] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-11T09:57:18.704+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-11T09:57:18.706+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-11T09:57:18.723+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-11T09:57:18.723+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-11T09:57:18.723+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-11T09:57:18.724+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749616038724 with initial instances count: 8
+2025-06-11T09:57:18.725+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PERFORMANCEMETRICSSERVICE with eureka with status UP
+2025-06-11T09:57:18.725+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749616038725, current=UP, previous=STARTING]
+2025-06-11T09:57:18.725+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096: registering service...
+2025-06-11T09:57:18.728+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9096 (http) with context path '/'
+2025-06-11T09:57:18.728+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9096
+2025-06-11T09:57:18.733+05:30  INFO 11128 --- [PerformanceMetricsService] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PERFORMANCEMETRICSSERVICE/LTIN603538.cts.com:PerformanceMetricsService:9096 - registration status: 204
+2025-06-11T09:57:18.735+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] c.w.PerformanceMetricsServiceApplication : Started PerformanceMetricsServiceApplication in 1.514 seconds (process running for 50707.101)
+2025-06-11T09:57:18.737+05:30  INFO 11128 --- [PerformanceMetricsService] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-11T10:02:18.709+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:07:18.712+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:12:18.716+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:17:18.719+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:22:18.730+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:27:18.732+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:32:18.733+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:37:18.737+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:42:18.743+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:47:18.759+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:52:18.761+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T10:57:18.776+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:02:33.664+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m44s182ms551µs400ns).
+2025-06-11T11:05:32.964+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:19:35.011+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=13m31s285ms324µs300ns).
+2025-06-11T11:23:04.517+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=59s444ms18µs700ns).
+2025-06-11T11:24:03.670+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:36:18.191+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:36:19.121+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=7m44s517ms881µs800ns).
+2025-06-11T11:41:18.207+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:46:53.052+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m33s783ms997µs).
+2025-06-11T11:47:49.190+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=56s138ms112µs600ns).
+2025-06-11T11:47:58.241+05:30  INFO 11128 --- [PerformanceMetricsService] [http-nio-9096-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-11T11:47:58.257+05:30  INFO 11128 --- [PerformanceMetricsService] [http-nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-11T11:47:58.288+05:30  INFO 11128 --- [PerformanceMetricsService] [http-nio-9096-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 31 ms
+2025-06-11T11:49:48.113+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:54:48.129+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T11:59:48.172+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:04:48.177+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:09:48.217+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:16:00.291+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=5m10s474ms392µs900ns).
+2025-06-11T12:19:28.722+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:24:28.732+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:29:28.741+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T12:34:28.752+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:36:57.785+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=58m27s119ms721µs700ns).
+2025-06-11T13:37:25.883+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:42:25.969+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:48:02.614+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m34s665ms968µs900ns).
+2025-06-11T13:50:30.628+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T13:55:30.637+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:00:30.652+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:05:30.662+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:10:37.794+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=3m34s877ms451µs100ns).
+2025-06-11T14:13:35.526+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:18:35.540+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:23:35.551+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:27:02.288+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=54s229ms594µs800ns).
+2025-06-11T14:28:59.780+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:33:59.786+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:42:07.963+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=7m35s538ms23µs100ns).
+2025-06-11T14:46:05.330+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T14:51:05.344+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:09:09.851+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:09:12.653+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=13m34s500ms54µs399ns).
+2025-06-11T15:14:09.865+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:19:09.891+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:24:09.893+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:29:09.899+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:34:09.905+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:39:09.915+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:44:09.929+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:47:40.777+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=57s515ms660µs500ns).
+2025-06-11T15:49:37.452+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:54:37.466+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T15:59:37.482+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:14:37.729+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=12m56s742ms426µs300ns).
+2025-06-11T16:17:04.218+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:22:04.223+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:27:04.228+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:32:04.240+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:40:41.466+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=4m31s892ms485µs800ns).
+2025-06-11T16:41:07.725+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:50:52.608+05:30  WARN 11128 --- [PerformanceMetricsService] [HikariPool-4 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=9m11s134ms926µs200ns).
+2025-06-11T16:54:48.862+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T16:59:48.878+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T17:04:48.887+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-11T17:09:48.904+05:30  INFO 11128 --- [PerformanceMetricsService] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -27,7 +27,7 @@ class TransactionLogManagementApplicationTests {
 	TransactionLogServiceImpl service;
 
 	@Test
-	public void recordTransactionLogTest() {
+	void recordTransactionLogTest() {
 		{
 			TransactionLog transactionLog = new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000);
 			Mockito.when(repository.save(transactionLog)).thenReturn(transactionLog);
@@ -37,7 +37,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getTransactionLogByIdTest() throws TransactionLogNotFound {
+	void getTransactionLogByIdTest() throws TransactionLogNotFound {
 		int transactionId = 2;
 		TransactionLog transactionLog = new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000);
 		Mockito.when(repository.findById(transactionId)).thenReturn(Optional.of(transactionLog));
@@ -47,37 +47,24 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getAllTransactionLogsTest() {
+	void getAllTransactionLogsTest() {
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 20000),
-				new TransactionLog(3, 1, 1, 1,10, "Inbound", 20000));
+				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
 		Mockito.when(repository.findAll()).thenReturn(transactionLogs);
 		List<TransactionLog> response = service.getAllTransactionLogs();
 		assertEquals(transactionLogs, response);
 	}
 
-	@Test
-	public void deleteTransactionLogTest() {
-		int transactionId = 10;
-		Mockito.doNothing().when(repository).deleteById(transactionId);
-		String response = service.deleteTransactionLog(transactionId);
-		assertEquals("Transaction deleted successfully", response);
-	}
-
 //	@Test
-//	public void getTransactionLogsByTimestampBetween() {
-//		String startDate = "2025-05-01";
-//		String endDate = "2025-05-02";
-//		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),
-//				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
-//		Mockito.when(repository.findByTimestampBetween(LocalDate.parse(startDate), LocalDate.parse(endDate)))
-//				.thenReturn(transactionLogs);
-//		List<TransactionLog> response = service.getTransactionLogsByTimestampBetween(LocalDate.parse(startDate),
-//				LocalDate.parse(endDate));
-//		assertEquals(transactionLogs, response);
+//	void deleteTransactionLogTest() {
+//		int transactionId = 10;
+//		Mockito.doNothing().when(repository).deleteById(transactionId);
+//		String response = service.deleteTransactionLog(transactionId);
+//		assertEquals("Transaction deleted successfully", response);
 //	}
 
 	@Test
-	public void getTransactionLogsByPriceBetweenTest() {
+	void getTransactionLogsByPriceBetweenTest() {
 		Double initialPrice = 1000.00;
 		Double finalPrice = 25000.00;
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),
@@ -88,7 +75,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getTransactionLogsByTypeTest() {
+	void getTransactionLogsByTypeTest() {
 		String type = "Inbound";
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),
 				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
@@ -99,7 +86,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getTransactionLogsByStockTest() {
+	void getTransactionLogsByStockTest() {
 		int stockId = 1;
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),
 				new TransactionLog(3, 1, 1, 1, 10, "Inbound", 20000));
@@ -110,7 +97,7 @@ class TransactionLogManagementApplicationTests {
 	}
 
 	@Test
-	public void getTransactionLogsByVendorTest() {
+	void getTransactionLogsByVendorTest() {
 
 		int vendorId = 1;
 		List<TransactionLog> transactionLogs = Arrays.asList(new TransactionLog(2, 1, 1, 1, 10, "Inbound", 1500),

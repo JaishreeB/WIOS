@@ -16,14 +16,19 @@ import com.cts.wios.model.Zone;
 import com.cts.wios.repository.ZoneRepository;
 
 @Service
-//@AllArgsConstructor
 
 public class ZoneServiceImpl implements ZoneService {
+
+	public ZoneServiceImpl(ZoneRepository repository, StockClient stockClient) {
+		super();
+		this.repository = repository;
+		this.stockClient = stockClient;
+	}
 	@Autowired
 	ZoneRepository repository;
 	@Autowired
 	StockClient stockClient;
-	
+
 	Logger logger = LoggerFactory.getLogger(ZoneServiceImpl.class);
 
 	/*
@@ -52,7 +57,7 @@ public class ZoneServiceImpl implements ZoneService {
 
 	@Override
 	public Zone updateZone(Zone zone) {
-		logger.info("Updating zone: {}", zone);
+		logger.info("Updating zone:.......... {}", zone);
 		return repository.save(zone);
 	}
 
@@ -73,8 +78,7 @@ public class ZoneServiceImpl implements ZoneService {
 		if (optional.isPresent()) {
 			logger.info("Zone found: {}", optional.get());
 			return optional.get();
-		}
-		else {
+		} else {
 			logger.error("Zone not found with ID: {}", warehouseZoneId);
 			throw new ZoneNotFound("zone not found");
 		}
@@ -88,6 +92,10 @@ public class ZoneServiceImpl implements ZoneService {
 	 * @return a message indicating the zone was deleted or not found     
 	 */
 
+	@Override
+	public String getZoneNameById(int warehouseZoneId) throws ZoneNotFound {
+		return viewZone(warehouseZoneId).getZoneName();
+	}
 	@Override
 	public String deleteZone(int warehouseZoneId) {
 		logger.info("Deleting zone with ID: {}", warehouseZoneId);

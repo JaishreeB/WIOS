@@ -22,22 +22,31 @@ import com.cts.wios.repository.TransactionLogRepository;
 
 @Service
 public class TransactionLogServiceImpl implements TransactionLogService {
+
+	public TransactionLogServiceImpl(TransactionLogRepository repository, StockClient stockClient,
+			UserClient userClient) {
+		super();
+		this.repository = repository;
+		this.stockClient = stockClient;
+		this.userClient = userClient;
+	}
 	@Autowired
 	TransactionLogRepository repository;
 	@Autowired
 	StockClient stockClient;
 	@Autowired
 	UserClient userClient;
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(TransactionLogServiceImpl.class);
 
 	@Override
 	public String recordTransactionLog(TransactionLog transactionLog) {
 		int stockId = transactionLog.getStockId();
 		Stock stock = stockClient.viewStock(stockId);
+		transactionLog.setStockName(stock.getStockName());
 		if (stock == null) {
 			logger.error("Stock item not found with ID: {}", stockId);
-			throw new  StockNotFoundException("StockItem Not Found");
+			throw new StockNotFoundException("StockItem Not Found");
 		}
 		logger.info("Recording transaction log: {}", transactionLog);
 		repository.save(transactionLog);
@@ -45,7 +54,7 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 		updateStockBasedOnTransaction(transactionLog);
 		return "Transaction Saved and Stock Updated!!!";
 	}
-	
+
 	private void updateStockBasedOnTransaction(TransactionLog transactionLog) throws StockNotFoundException {
 		logger.info("Updating stock item based on transaction: {}", transactionLog);
 		int stockId = transactionLog.getStockId();
@@ -58,15 +67,17 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 
 		if (transactionLog.getType().equalsIgnoreCase("inbound")) {
 			logger.info("Processing inbound transaction for stock item: {}", stock);
-			stockClient.updateStockForInbound(stock);
+			
 			stock.setStockQuantity(stock.getStockQuantity() + transactionLog.getQuantity());
-			stockClient.createStock(stock);
-			logger.info("Stock item updated successfully for inbound transaction: {}", stock);
+			stockClient.updateStockForInbound(stock);
+//			stockClient.createStock(stock);
+			logger.info("Stock item updated successfully for outbound transaction: {}", stock);
 		} else if (transactionLog.getType().equalsIgnoreCase("outbound")) {
 			logger.info("Processing outbound transaction for stock item: {}", stock);
-			stockClient.updateStockForOutbound(stock);
 			stock.setStockQuantity(stock.getStockQuantity() - transactionLog.getQuantity());
-			stockClient.createStock(stock);
+			stockClient.updateStockForOutbound(stock);
+			//UPDATING
+//			stockClient.createStock(stock);
 			logger.info("Stock item updated successfully for outbound transaction: {}", stock);
 		} else {
 			logger.error("Invalid transaction type: {}", transactionLog.getType());
@@ -82,7 +93,7 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 			logger.info("Transaction log found: {}", optional.get());
 			return optional.get();
 		}
-			
+
 		else {
 			logger.error("Transaction log not found with ID: {}", transactionId);
 			throw new TransactionLogNotFound("transaction log not found");
@@ -102,16 +113,15 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 		logger.info("Retrieving transaction logs for stock ID: {}", stockId);
 		List<TransactionLog> transactions = repository.findByStockIdIs(stockId);
 		Stock stock = stockClient.viewStock(stockId);
-		StockTransactionResponseDTO response = new StockTransactionResponseDTO(stock,transactions);
+		StockTransactionResponseDTO response = new StockTransactionResponseDTO(stock, transactions);
 		logger.info("Transaction logs retrieved successfully for stock ID: {}", stockId);
 		return response;
 
 	}
-	
+
 	@Override
 	public List<TransactionLog> getTransactionLogsByZone(int zoneId) {
-		List<TransactionLog> transactions = repository.findByZoneIdIs(zoneId);
-		return transactions;
+		return repository.findByZoneIdIs(zoneId);
 
 	}
 
@@ -121,7 +131,7 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 		List<TransactionLog> transactionLogs = repository.findByPriceBetween(initialPrice, finalPrice);
 		logger.info("Transaction logs retrieved successfully between prices: {} and {}", initialPrice, finalPrice);
 		return transactionLogs;
-		
+
 	}
 
 	@Override
@@ -133,12 +143,44 @@ public class TransactionLogServiceImpl implements TransactionLogService {
 	}
 
 	@Override
-	public String deleteTransactionLog(int transactionId) {
-		logger.info("Deleting transaction log with ID: {}", transactionId);
-		repository.deleteById(transactionId);
-		logger.info("Transaction log deleted successfully: {}", transactionId);
-		return "Transaction deleted successfully";
+	public String deleteTransactionLog(int transactionId) throws TransactionLogNotFound {
+	    logger.info("Deleting transaction log with ID: {}", transactionId);
+	    
+	    Optional<TransactionLog> optionalTransaction = repository.findById(transactionId);
+	    if (!optionalTransaction.isPresent()) {
+	        logger.error("Transaction log not found with ID: {}", transactionId);
+	        throw new TransactionLogNotFound("Transaction log not found");
+	    }
+
+	    TransactionLog transactionLog = optionalTransaction.get();
+	    int stockId = transactionLog.getStockId();
+	    Stock stock = stockClient.viewStock(stockId);
+
+	    if (stock == null) {
+	        logger.error("Stock item not found with ID: {}", stockId);
+	        throw new StockNotFoundException("StockItem Not Found");
+	    }
+
+	    // Reverse the stock update
+	    if (transactionLog.getType().equalsIgnoreCase("inbound")) {
+	        stock.setStockQuantity(stock.getStockQuantity() - transactionLog.getQuantity());
+	    } else if (transactionLog.getType().equalsIgnoreCase("outbound")) {
+	        stock.setStockQuantity(stock.getStockQuantity() + transactionLog.getQuantity());
+	    } else {
+	        logger.error("Invalid transaction type: {}", transactionLog.getType());
+	        throw new IllegalArgumentException("Invalid transaction type");
+	    }
+
+	    // Update the stock
+	    stockClient.createStock(stock); // or use updateStockForInbound/Outbound if needed
+
+	    // Delete the transaction
+	    repository.deleteById(transactionId);
+	    logger.info("Transaction log deleted and stock updated successfully: {}", transactionId);
+
+	    return "Transaction deleted and stock updated successfully";
 	}
+
 
 	@Override
 	public List<TransactionLog> getTransactionLogsByTimestampBetween(LocalDateTime startDate, LocalDateTime endDate) {

@@ -2,6 +2,7 @@ package com.cts.controller;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -27,17 +28,17 @@ import lombok.NoArgsConstructor;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin("*")
+//@CrossOrigin("*")
 @AllArgsConstructor
 @NoArgsConstructor
 public class AuthController {
-
+	@Autowired
 	private UserService service;
-
+	@Autowired
 	private JwtService jwtService;
-
+	@Autowired
 	private UserInfoRepository repo;
-
+	@Autowired
 	private AuthenticationManager authenticationManager;
 
 	// http://localhost:9090/auth/welcome
@@ -65,25 +66,32 @@ public class AuthController {
 		}
 	}
 
-	// http://localhost:9090/auth/getroles/{username}
+	
 	@GetMapping("/getroles/{username}")
 	public String getRoles(@PathVariable String username) {
 		return service.getRoles(username);
 	}
+	@GetMapping("/getUserId/{username}")
+	public int getUserId(@PathVariable String username) {
+		return service.getUserId(username);
+	}
+	
+	@GetMapping("/getAdmins")
+	public List<String> getAllAdmins() {
+		return service.getAllAdminEmails();
+	}
 
-	// http://localhost:9090/auth/fetchById/{id}
+
 	@GetMapping("/fetchById/{uid}")
 	public UserInfo getUserById(@PathVariable("uid") int id) throws UserRoleNotFound {
 		return service.getUserById(id);
 	}
 
-	// http://localhost:9090/auth/deleteById/{id}
 	@DeleteMapping("/deleteById/{uid}")
 	public String removeUser(@PathVariable("uid") int id) {
 		return service.removeUser(id);
 	}
 
-	// http://localhost:9090/auth/fetchAll
 	@GetMapping("/fetchAll")
 	public List<UserInfo> getAllUsers() {
 		return service.getAllUsers();

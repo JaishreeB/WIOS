@@ -17,33 +17,36 @@ import com.cts.wios.exceptions.VendorNotFound;
 import com.cts.wios.model.Vendor;
 import com.cts.wios.service.VendorService;
 
+import lombok.AllArgsConstructor;
+
 @RestController
 @RequestMapping("/vendors")
+@AllArgsConstructor
 public class VendorController {
 	@Autowired
 	VendorService service;
 
-	@PostMapping("/save") // http://localhost:9090/vendors/save
+	@PostMapping("/save")
 	public String saveVendor(@RequestBody @Validated Vendor vendor) {
 		return service.saveVendor(vendor);
 	}
 
-	@PutMapping("/update") // http://localhost:9090/vendors/update
+	@PutMapping("/update")
 	public Vendor updateVendor(@RequestBody @Validated Vendor vendor) {
 		return service.updateVendor(vendor);
 	}
 
-	@GetMapping("/fetchById/{id}") // http://localhost:9090/vendors/fetchById/{id}
+	@GetMapping("/fetchById/{id}")
 	public Vendor getVendorById(@PathVariable("id") int vendorId) throws VendorNotFound {
 		return service.getVendorById(vendorId);
 	}
 
-	@DeleteMapping("/deleteById/{id}") // http://localhost:9090/vendors/deleteById/{id}
+	@DeleteMapping("/deleteById/{id}") 
 	public String removeVendor(@PathVariable("id") int vendorId) {
 		return service.removeVendor(vendorId);
 	}
 
-	@GetMapping("/fetchAll") // http://localhost:9090/vendors/fetchAll
+	@GetMapping("/fetchAll")
 	public List<Vendor> getAllVendors() {
 		return service.getAllVendors();
 	}

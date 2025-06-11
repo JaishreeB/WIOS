@@ -5,7 +5,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class PerformanceMetricsServiceApplicationTests {
-
+	/*
+	 * default test case
+	 */
 	@Test
 	void contextLoads() {
 	}

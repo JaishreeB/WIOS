@@ -16,8 +16,11 @@ import com.cts.wios.exceptions.ZoneNotFound;
 import com.cts.wios.model.Zone;
 import com.cts.wios.service.ZoneService;
 
+import lombok.AllArgsConstructor;
+
 @RestController
 @RequestMapping("/zone")
+@AllArgsConstructor
 public class ZoneController {
 	@Autowired
 	ZoneService service;
@@ -50,6 +53,10 @@ public class ZoneController {
 	@GetMapping("/fetchAll")
 	public List<Zone> getAllZone() {
 		return service.getAllZone();
+	}
+	@GetMapping("/fetchZoneNameById/{id}")
+	public String getZoneNameById(@PathVariable("id") int warehouseZoneId) throws ZoneNotFound {
+		return service.getZoneNameById(warehouseZoneId);
 	}
 
 }

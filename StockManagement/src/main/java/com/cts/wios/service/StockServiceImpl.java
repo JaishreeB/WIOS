@@ -1,7 +1,6 @@
 package com.cts.wios.service;
 
 import java.util.List;
-
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -9,14 +8,18 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.cts.wios.dto.AdminNotificationRequest;
 import com.cts.wios.dto.StockVendorResponseDTO;
 import com.cts.wios.dto.StockZoneResponseDTO;
 import com.cts.wios.dto.Vendor;
+import com.cts.wios.dto.VendorNotificationRequest;
 import com.cts.wios.dto.Zone;
 import com.cts.wios.exceptions.SpaceNotAvailable;
 import com.cts.wios.exceptions.StockNotFoundException;
 import com.cts.wios.exceptions.VendorNotFoundException;
 import com.cts.wios.exceptions.ZoneNotFoundException;
+import com.cts.wios.feignclient.NotificationClient;
+import com.cts.wios.feignclient.UserInfoClient;
 import com.cts.wios.feignclient.VendorClient;
 import com.cts.wios.feignclient.ZoneClient;
 import com.cts.wios.model.Stock;
@@ -24,14 +27,25 @@ import com.cts.wios.repository.StockRepository;
 
 @Service
 public class StockServiceImpl implements StockService {
+
+	public StockServiceImpl(StockRepository repository, ZoneClient zoneClient, VendorClient vendorClient) {
+		super();
+		this.repository = repository;
+		this.zoneClient = zoneClient;
+		this.vendorClient = vendorClient;
+	}
+
+	@Autowired
+	NotificationClient notificationClient;
+
 	@Autowired
 	StockRepository repository;
-
 	@Autowired
 	ZoneClient zoneClient;
-
 	@Autowired
 	VendorClient vendorClient;
+	@Autowired
+	UserInfoClient userClient;
 
 	private static final Logger logger = LoggerFactory.getLogger(StockServiceImpl.class);
 
@@ -65,7 +79,7 @@ public class StockServiceImpl implements StockService {
 			logger.info("Stock saved successfully: {}", stock);
 			return "Stock saved successfully";
 		} catch (RuntimeException e) {
-			logger.error("Zone ID not found: {}", zoneId);
+			logger.error("Zone ID not found for: {}", zoneId);
 			throw new ZoneNotFoundException("Zone ID not found");
 		}
 	}
@@ -82,20 +96,25 @@ public class StockServiceImpl implements StockService {
 	public Stock updateStockForInbound(Stock stock) throws SpaceNotAvailable, ZoneNotFoundException {
 		logger.info("Updating stock for inbound: {}", stock);
 		int zoneId = stock.getZoneId();
+		Stock oldStock = viewStock(stock.getStockId());
 		Zone zone;
 
 		try {
 			zone = zoneClient.viewZone(zoneId);
-			UpdateCapacity = zone.getAvailableSpace() - stock.getStockQuantity();
+			logger.error("IN INBOUND ZONE BEFORE UPDATE..........: {}", zone);
+			UpdateCapacity = (zone.getAvailableSpace() + oldStock.getStockQuantity()) - stock.getStockQuantity();
 			if (UpdateCapacity >= 0) { // Ensure UpdateCapacity is non-negative
+
 				zone.setAvailableSpace(UpdateCapacity);
 				zoneClient.updateZone(zone);
+				logger.error("IN INBOUND ZONE UPDATE..........: {}", zone);
 			} else {
 				logger.error("Space not available to store the stock: {}", stock);
-				throw new SpaceNotAvailable("Space not available to store the stock!!!!");
+				throw new SpaceNotAvailable("Space not available to store the stock!!!!!");
 			}
 			logger.info("Stock saved successfully: {}", stock);
-			return stock;
+
+			return repository.save(stock);
 		} catch (RuntimeException e) {
 			logger.error("Zone ID not found: {}", zoneId);
 			throw new ZoneNotFoundException("Zone ID not found");
@@ -111,19 +130,27 @@ public class StockServiceImpl implements StockService {
 	 * @throws ZoneNotFoundException If the zone ID is not found.
 	 */
 	@Override
-	public Stock updateStockForOutbound(Stock stock)  throws ZoneNotFoundException {
+	public Stock updateStockForOutbound(Stock stock) throws ZoneNotFoundException {
 		logger.info("Updating stock for outbound: {}", stock);
 		int zoneId = stock.getZoneId();
+		Stock oldStock = viewStock(stock.getStockId());
+		logger.error("IN OUTBOUND old stock for UPDATE..........: {}", oldStock);
 		Zone zone;
 		try {
 			zone = zoneClient.viewZone(zoneId);
 
-			UpdateCapacity = zone.getAvailableSpace() + stock.getStockQuantity();
+			UpdateCapacity = zone.getAvailableSpace() + (oldStock.getStockQuantity() - stock.getStockQuantity());
+			logger.error("IN OUTBOUND before ZONE UPDATE..........: {}", zone);
 			zone.setAvailableSpace(UpdateCapacity);
 			zoneClient.updateZone(zone);
-			
+			logger.error("IN OUTBOUND ZONE UPDATE..........: {}", zone);
+
 			logger.info("Stock updated for outbound: {}", stock);
-			return repository.save(stock);
+			Stock updatedStock=repository.save(stock);
+			if (stock.getStockQuantity() <= 10) {
+				triggerStockNotification(stock);
+			}
+			return updatedStock;
 		} catch (RuntimeException e) {
 			logger.error("Zone ID not found: {}", zoneId);
 			throw new ZoneNotFoundException("Zone ID not found");
@@ -167,7 +194,7 @@ public class StockServiceImpl implements StockService {
 		}
 		int zoneId = stockItem.getZoneId();
 		Zone zone = zoneClient.viewZone(zoneId);
-		UpdateCapacity = zone.getAvailableSpace() - stockItem.getStockQuantity();
+		UpdateCapacity = zone.getAvailableSpace() + stockItem.getStockQuantity();
 		zone.setAvailableSpace(UpdateCapacity);
 		zoneClient.updateZone(zone);
 		repository.deleteById(stock);
@@ -246,5 +273,29 @@ public class StockServiceImpl implements StockService {
 			logger.error("Error in stock service: Vendor ID not found", e);
 			throw new VendorNotFoundException("Error in stock service: Vendor ID not found");
 		}
+	}
+
+	public void triggerStockNotification(Stock stock) {
+		logger.info(".......................inside trigger notification");
+		logger.info(".......................email sending stock:{}", stock);
+		Vendor vendor = vendorClient.getVendorById(stock.getVendorId());
+		Zone zone = zoneClient.viewZone(stock.getZoneId());
+
+		// Get admin emails from User service
+		List<String> adminEmails = userClient.getAllAdmins();
+		logger.info(".......................email sending stock name:{}", stock.getStockName());
+		logger.info(".......................email sending stock name:{}", stock.getStockQuantity());
+
+		// Prepare and send admin notification
+		AdminNotificationRequest adminRequest = new AdminNotificationRequest(stock.getStockName(),
+				stock.getStockQuantity(), vendor.getVendorName(), vendor.getEmail(), zone.getZoneName(), adminEmails);
+
+		notificationClient.sendAdminLowStockNotification(adminRequest);
+
+		// Prepare and send vendor notification
+		VendorNotificationRequest vendorRequest = new VendorNotificationRequest(stock.getStockName(),
+				vendor.getEmail());
+		notificationClient.sendVendorLowStockNotification(vendorRequest);
+
 	}
 }

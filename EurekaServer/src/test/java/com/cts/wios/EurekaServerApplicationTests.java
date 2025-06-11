@@ -5,9 +5,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class EurekaServerApplicationTests {
-
+	/*
+	 * default test case
+	 */
 	@Test
 	void contextLoads() {
 	}
 
+	
 }

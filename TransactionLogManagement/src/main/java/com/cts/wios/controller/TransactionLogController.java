@@ -21,8 +21,11 @@ import com.cts.wios.exceptions.TransactionLogNotFound;
 import com.cts.wios.model.TransactionLog;
 import com.cts.wios.service.TransactionLogService;
 
+import lombok.AllArgsConstructor;
+
 @RestController
 @RequestMapping("/transactionLog")
+@AllArgsConstructor
 public class TransactionLogController {
 	@Autowired
 	TransactionLogService service;
@@ -38,7 +41,7 @@ public class TransactionLogController {
 	}
 
 	@DeleteMapping("/delete/{id}")
-	public String deleteTransactionLog(@PathVariable("id") int transactionLog) {
+	public String deleteTransactionLog(@PathVariable("id") int transactionLog) throws TransactionLogNotFound {
 		return service.deleteTransactionLog(transactionLog);
 
 	}
@@ -82,7 +85,7 @@ public class TransactionLogController {
 		return service.getTransactionLogsByTimestampBetween(startDateTime, endDateTime);
 	}
 
-	@GetMapping("/fetchByTimestamp/{start}/{end}")//http://localhost:9090/transactionlog/fetchByTimestamp/{start}/{end}
+	@GetMapping("/fetchByTimestamp/{start}/{end}")
 	public List<TransactionLog> findByTimestampBetween(@PathVariable("start") @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME)  LocalDateTime startDate,
 			 @PathVariable("end") @DateTimeFormat(iso= DateTimeFormat.ISO.DATE_TIME) LocalDateTime endDate) {
 		return service.getTransactionLogsByTimestampBetween(startDate, endDate);
